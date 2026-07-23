@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Funding Kit — 0% Business Funding, Done For You</title>
+<meta name="description" content="Funding Kit helps entrepreneurs and real estate investors secure up to $150,000 in 0% business funding." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --ink:#141b26; --soft:#5c6675; --line:#e9edf2; --panel:#f7f9fc;
+    --navy:#152238; --navy2:#1e2f4d; --gold:#c19a44; --gold-d:#a37f2f;
+    --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    --disp:'Sora','Inter',system-ui,sans-serif;
+    --maxw:1080px;
+    --sh:0 12px 34px rgba(20,27,38,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+  h1,h2,h3{font-family:var(--disp);font-weight:700;letter-spacing:-.02em;color:var(--navy);line-height:1.18}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:600;border-radius:10px;padding:14px 28px;font-size:15px;cursor:pointer;border:none;transition:transform .18s,background .18s}
+  .btn-gold{background:var(--gold);color:#fff}
+  .btn-gold:hover{transform:translateY(-2px);background:var(--gold-d)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{transform:translatey(-2px);background:#1d2e4d}
+  .btn-line{background:transparent;color:var(--navy);border:1px solid #d5dae2}
+  .btn-line:hover{border-color:var(--navy)}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:13px}
+  .brand .fk{position:relative;display:inline-flex;align-items:flex-end;font-family:var(--disp);font-weight:800;font-size:34px;line-height:.85;letter-spacing:-.05em;padding-bottom:7px}
+  .brand .fk .f{color:var(--navy)}
+  .brand .fk .k{color:var(--gold-d);margin-left:-3px}
+  .brand .fk .sw{position:absolute;left:-3px;right:-10px;bottom:0;height:13px;overflow:visible}
+  .brand .txt{display:flex;flex-direction:column;line-height:1.05}
+  .brand .wm{font-family:var(--disp);font-weight:700;font-size:15px;letter-spacing:.15em}
+  .brand .wm .n{color:var(--navy)}.brand .wm .g{color:var(--gold-d)}
+  .brand .tl{display:flex;align-items:center;gap:7px;font-size:7.5px;font-weight:600;letter-spacing:.13em;color:var(--navy);margin-top:4px}
+  .brand .tl:before,.brand .tl:after{content:"";height:1.5px;width:14px;background:var(--gold);flex:0 0 auto}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{color:var(--soft);font-weight:500;font-size:14.5px}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-toggle{display:none;background:none;border:none;color:var(--navy);cursor:pointer;padding:6px;line-height:0}
+  @media(max-width:820px){
+    .nav-toggle{display:inline-flex}
+    .nav-links{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:6px 0;box-shadow:0 14px 28px rgba(20,27,38,.1);display:none}
+    .nav-links.open{display:flex}
+    .nav-links a{padding:13px 24px;font-size:16px;color:var(--ink)}
+    .nav-links a.btn{margin:10px 24px;text-align:center;justify-content:center}
+  }
+
+  .hero{background:var(--navy);color:#fff;padding:96px 0 92px;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(620px 320px at 88% 0%,rgba(193,154,68,.16),transparent 62%)}
+  .hero .in{position:relative;max-width:720px}
+  .hero .kick{color:var(--gold);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px}
+  .hero h1{font-size:clamp(34px,5vw,52px);color:#fff;line-height:1.08}
+  .hero h1 span{color:var(--gold)}
+  .hero p{color:#c3ccda;font-size:18.5px;margin:22px 0 32px;max-width:580px}
+  .hero .cta{display:flex;gap:13px;flex-wrap:wrap}
+  .hero .trust{margin-top:34px;color:#aeb8c8;font-size:14px;display:flex;gap:22px;flex-wrap:wrap}
+  .hero .trust span{display:flex;gap:8px;align-items:center}
+  .hero .trust span:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold)}
+
+  section{padding:84px 0}
+  .lead{max-width:640px;margin:0 auto 46px;text-align:center}
+  .lead .k{color:var(--gold-d);font-weight:600;letter-spacing:.14em;font-size:12.5px;text-transform:uppercase}
+  .lead h2{font-size:clamp(26px,3.4vw,36px);margin-top:12px}
+  .lead p{color:var(--soft);margin-top:12px;font-size:17px}
+
+  /* Founder */
+  .founder{display:flex;flex-wrap:wrap;gap:44px;align-items:center;max-width:920px;margin:0 auto}
+  .founder .photo{flex:0 0 180px;text-align:center;margin:0 auto}
+  .founder .av{width:170px;height:170px;border-radius:50%;margin:0 auto 14px;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:var(--disp);font-weight:700;font-size:48px;border:2px solid var(--gold)}
+  .founder .av img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block}
+  .founder .nm{font-family:var(--disp);font-weight:700;color:var(--navy);font-size:19px}
+  .founder .rl{color:var(--gold-d);font-size:13px;font-weight:600}
+  .founder .bio{flex:1;min-width:300px}
+  .founder .bio .k{color:var(--gold-d);font-weight:600;letter-spacing:.14em;font-size:12.5px;text-transform:uppercase}
+  .founder .bio h2{font-size:clamp(24px,3vw,32px);margin:10px 0 16px}
+  .founder .bio p{color:var(--soft);font-size:15.5px;margin-bottom:14px}
+  .founder .quote{color:var(--navy);font-size:16px;font-style:italic;border-left:3px solid var(--gold);padding-left:16px}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;max-width:940px;margin:0 auto}
+  @media(max-width:820px){.steps{grid-template-columns:1fr;gap:26px}}
+  .step{text-align:center}
+  .step .b{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold-d);display:grid;place-items:center;font-family:var(--disp);font-weight:700;font-size:18px;margin:0 auto 16px}
+  .step h3{font-size:19px;margin-bottom:8px}
+  .step p{color:var(--soft);font-size:15px}
+  .secure{text-align:center;color:var(--soft);font-size:15.5px;max-width:640px;margin:44px auto 0}
+  .secure b{color:var(--navy);font-weight:600}
+
+  .calc-sec{background:var(--panel)}
+
+  /* FAQ */
+  .faq{max-width:760px;margin:0 auto}
+  .q{border-bottom:1px solid var(--line);padding:22px 2px}
+  .q h3{font-size:16.5px;margin-bottom:6px}
+  .q p{color:var(--soft);font-size:15px}
+
+  .cta-band{background:var(--navy);border-radius:20px;padding:52px 34px;text-align:center;color:#fff;max-width:900px;margin:0 auto}
+  .cta-band h2{color:#fff;font-size:clamp(25px,3.2vw,34px)}
+  .cta-band p{color:#c3ccda;margin:12px 0 24px;font-size:17px}
+  .cta-band .row{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--soft)}
+  .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:14px;align-items:center}
+  .foot a{color:var(--navy);font-weight:600}
+  .disc{max-width:var(--maxw);margin:20px auto 0;padding:0 24px;color:#93a0b5;font-size:11.5px;line-height:1.55}
+</style>
+</head>
+<body>
+<header id="top"><div class="wrap nav">
+  <a href="index.html" class="brand" aria-label="Funding Kit — home" style="cursor:pointer">
+    <span class="fk"><span class="f">F</span><span class="k">K</span><svg class="sw" viewBox="0 0 90 16" preserveAspectRatio="none" aria-hidden="true"><path d="M2 13 C 28 3, 60 3, 88 9" stroke="#c19a44" stroke-width="3.4" fill="none" stroke-linecap="round"/></svg></span>
+    <span class="txt"><span class="wm"><span class="n">FUNDING</span> <span class="g">KIT</span></span><span class="tl">CREDIT · CAPITAL · OPPORTUNITY</span></span>
+  </a>
+  <nav class="nav-links" onclick="this.classList.remove('open')">
+    <a href="#about">About</a><a href="calculator.html">Calculator</a><a href="#faq">FAQ</a>
+    <a href="https://calendly.com/ian-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold" style="padding:10px 20px">Book a Call</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Open menu" onclick="this.closest('.nav').querySelector('.nav-links').classList.toggle('open')"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <div class="kick">0% Business Funding</div>
+  <h1>Up to <span>$150,000</span> in business capital — approved in as little as 14 days.</h1>
+  <p>Funding Kit helps entrepreneurs and real estate investors secure 0% interest business funding. We handle the structuring and applications for you, from first call to funded.</p>
+  <div class="cta">
+    <a href="calculator.html" class="btn btn-gold">Check what you qualify for</a>
+    <a href="https://calendly.com/ian-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.3)">Talk to Ian</a>
+  </div>
+  <div class="trust">
+    <span>No credit check to see your options</span><span>Done for you</span><span>Funded in as little as 14 days</span>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="founder">
+    <div class="photo">
+      <div class="av"><img src="ian.jpg" alt="Ian Jung" onerror="this.style.display='none';this.parentNode.textContent='IJ'"></div>
+      <div class="nm">Ian Jung</div>
+      <div class="rl">Founder, Funding Kit</div>
+    </div>
+    <div class="bio">
+      <span class="k">Who You'll Work With</span>
+      <h2>Straight answers, no pressure.</h2>
+      <p>Ian founded Funding Kit on a simple belief: capital shouldn't be the reason a good business never gets off the ground. He studied Economics &amp; Policy Studies at Syracuse University's Maxwell School, where he became fascinated by how financial systems and structure decide who gets access to opportunity.</p>
+      <p>His background in data analysis and operations taught him that strong outcomes aren't luck — they come from the right structure and the right information. He brings that same systems-first approach to funding: honest guidance, a clear plan, and someone in your corner for every application.</p>
+      <p class="quote">"I watched capable people get told no, over and over, simply because no one showed them how the system actually works. My job is to change that."</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="how" class="calc-sec"><div class="wrap">
+  <div class="lead"><span class="k">How It Works</span><h2>Simple, and done for you</h2></div>
+  <div class="steps">
+    <div class="step"><div class="b">1</div><h3>Pre-qualify</h3><p>Run the calculator or book a free call. No credit check, no obligation.</p></div>
+    <div class="step"><div class="b">2</div><h3>Get funded</h3><p>We structure and sequence your applications with you — built for the largest, fastest approvals.</p></div>
+    <div class="step"><div class="b">3</div><h3>Scale</h3><p>Put your capital to work — and keep access for future rounds.</p></div>
+  </div>
+  <p class="secure">We help you access <b>0% intro business credit</b>, <b>business lines of credit</b>, and set you up for <b>long-term, SBA-ready funding</b>.</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="lead"><span class="k">FAQ</span><h2>Common questions</h2></div>
+  <div class="faq">
+    <div class="q"><h3>How much can I access?</h3><p>Typically $10,000 to $150,000, depending on your credit and business setup. The calculator gives your realistic range.</p></div>
+    <div class="q"><h3>How long does it take?</h3><p>Most clients are funded within a few weeks — some as fast as 14 days, depending on their profile.</p></div>
+    <div class="q"><h3>Do I need collateral or perfect credit?</h3><p>No collateral is required. Stronger credit helps, but structure and sequencing matter just as much — we'll tell you honestly where you stand.</p></div>
+  </div>
+</div></section>
+
+<section id="apply" class="calc-sec"><div class="wrap"><div class="cta-band">
+  <h2>Ready to see your number?</h2>
+  <p>Check what you qualify for in 60 seconds, or book a free call with Ian.</p>
+  <div class="row">
+    <a href="calculator.html" class="btn btn-gold">Check what you qualify for</a>
+    <a href="https://calendly.com/ian-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.3)">Book a Call with Ian</a>
+  </div>
+</div></div></section>
+
+<footer><div class="wrap foot">
+  <div><strong style="color:var(--navy)">Funding Kit</strong></div>
+  <div>Mon-Fri, 9am-6pm &nbsp;·&nbsp; ian@yourfundingkit.com</div>
+</div>
+<div class="disc">Funding Kit is a funding consulting service, not a lender or bank. The calculator provides a rough estimate for informational purposes only — it is not an offer, pre-approval, or guarantee of funding. Amounts, rates, and timelines vary by applicant and lender. "0% interest" refers to introductory-rate business credit products offered by third-party financial institutions, subject to their approval and terms. Nothing here is financial or legal advice.</div>
+</footer>
+</body>
+</html>
