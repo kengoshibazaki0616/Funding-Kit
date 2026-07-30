@@ -4,17 +4,17 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Funding Calculator — Funding Kit</title>
-<meta name="description" content="See what 0% business funding you may qualify for — six quick questions, an instant estimate. No credit check." />
+<meta name="description" content="See what 0% business funding you may qualify for — three quick questions, an instant estimate. No credit check." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://yourfundingkit.com/calculator" />
 <meta property="og:title" content="Funding Calculator — See What You Qualify For" />
-<meta property="og:description" content="Six quick questions, an instant estimate of the 0% business funding you may qualify for. No credit check." />
+<meta property="og:description" content="Three quick questions, an instant estimate of the 0% business funding you may qualify for. No credit check." />
 <meta property="og:image" content="https://yourfundingkit.com/og.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Funding Calculator — See What You Qualify For" />
-<meta name="twitter:description" content="Six quick questions, an instant estimate. No credit check." />
+<meta name="twitter:description" content="Three quick questions, an instant estimate. No credit check." />
 <meta name="twitter:image" content="https://yourfundingkit.com/og.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,17 +71,15 @@
   .calc{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch;max-width:960px;margin:0 auto}
   @media(max-width:820px){.calc{grid-template-columns:1fr}}
   .calc-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--sh)}
-  .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-  @media(max-width:480px){.calc-grid{grid-template-columns:1fr}}
-  .fld{display:flex;flex-direction:column;gap:6px}
-  .fld label{font-size:12px;font-weight:600;color:var(--soft)}
-  .fld select,.fld input{padding:12px 13px;border:1px solid #dfe4ec;border-radius:10px;font-size:15px;font-family:inherit;color:var(--ink);background:#fff}
-  .fld select:focus,.fld input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(193,154,68,.14)}
-  .calc-card .btn{width:100%;margin-top:6px}
-  .result{background:var(--navy);border-radius:18px;padding:32px;display:flex;flex-direction:column;justify-content:center;color:#fff;min-height:280px}
+  .fld{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+  .fld:last-of-type{margin-bottom:0}
+  .fld label{font-size:12.5px;font-weight:600;color:var(--soft)}
+  .fld select{padding:13px 13px;border:1px solid #dfe4ec;border-radius:10px;font-size:15px;font-family:inherit;color:var(--ink);background:#fff}
+  .fld select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(193,154,68,.14)}
+  .result{background:var(--navy);border-radius:18px;padding:32px;display:flex;flex-direction:column;justify-content:center;color:#fff;min-height:300px}
   .result .lbl{color:#b9c3d4;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
   .result .amt{font-family:var(--disp);font-size:clamp(30px,5vw,42px);font-weight:700;color:var(--gold);margin:9px 0}
-  .result .tier{font-family:var(--disp);font-weight:700;font-size:16px;margin-bottom:6px}
+  .result .tier{font-family:var(--disp);font-weight:700;font-size:18px;color:var(--gold);margin-bottom:8px}
   .result .msg{color:#c6cfdd;font-size:14.5px}
   .result .placeholder{color:#93a0b5;font-size:15px;text-align:center;margin:auto;max-width:270px}
   .result .btn{margin-top:20px}
@@ -108,30 +106,40 @@
 <section class="top"><div class="wrap in">
   <div class="kick">Free Funding Calculator</div>
   <h1>See what you qualify for</h1>
-  <p>Six quick questions, an instant estimate. No credit check, no obligation.</p>
+  <p>Three quick questions, an instant estimate. No credit check, no obligation.</p>
 </div></section>
 
 <section class="calc-wrap"><div class="wrap">
   <div class="calc">
     <div class="calc-card">
-      <div class="calc-grid">
-        <div class="fld"><label>Annual business revenue</label>
-          <select id="rev"><option value="">Select…</option><option value="0">No revenue yet</option><option value="0">Under $50k</option><option value="8000">$50k – $150k</option><option value="18000">$150k – $500k</option><option value="40000">$500k+</option></select></div>
-        <div class="fld"><label>Years in business</label>
-          <select id="yrs"><option value="">Select…</option><option value="0">Less than 1</option><option value="4000">1 – 2 years</option><option value="10000">3 – 5 years</option><option value="20000">5+ years</option></select></div>
-        <div class="fld"><label>Personal FICO score</label>
-          <select id="fico"><option value="">Select…</option><option value="b">Below 640</option><option value="a">640 – 679</option><option value="c">680 – 719</option><option value="d">720 – 759</option><option value="e">760+</option></select></div>
-        <div class="fld"><label>Current credit limit (total)</label>
-          <input id="limit" type="number" min="0" placeholder="$  e.g. 15000" /></div>
-        <div class="fld"><label>Hard inquiries (last 6 mo)</label>
-          <select id="inq"><option value="">Select…</option><option value="i1">0 – 2</option><option value="i2">3 – 5</option><option value="i3">6+</option></select></div>
-        <div class="fld"><label>Credit utilization</label>
-          <select id="util"><option value="">Select…</option><option value="u1">Under 10%</option><option value="u2">10 – 30%</option><option value="u3">30 – 50%</option><option value="u4">Over 50%</option></select></div>
-      </div>
-      <button class="btn btn-navy" onclick="calc()">Calculate</button>
+      <div class="fld"><label>What's your credit score?</label>
+        <select id="fico" onchange="calc()">
+          <option value="">Select…</option>
+          <option value="e">760+</option>
+          <option value="d">720 – 759</option>
+          <option value="c">680 – 719</option>
+          <option value="a">640 – 679</option>
+          <option value="b">Below 640</option>
+        </select></div>
+      <div class="fld"><label>Your highest current credit card limit?</label>
+        <select id="limit" onchange="calc()">
+          <option value="">Select…</option>
+          <option value="20000">$15,000+</option>
+          <option value="12500">$10,000 – $15,000</option>
+          <option value="7500">$5,000 – $10,000</option>
+          <option value="3500">$2,000 – $5,000</option>
+          <option value="1500">Under $2,000</option>
+          <option value="0">I don't have a credit card</option>
+        </select></div>
+      <div class="fld"><label>Any late payments, collections, or bankruptcy in the last 2 years?</label>
+        <select id="derog" onchange="calc()">
+          <option value="">Select…</option>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select></div>
     </div>
     <div class="result" id="result">
-      <div class="placeholder">Your estimated 0% funding range will appear here.</div>
+      <div class="placeholder">Answer the three questions and your estimated 0% funding range will appear right here.</div>
     </div>
   </div>
 </div></section>
@@ -144,41 +152,40 @@
 </footer>
 
 <script>
-function fmt(n){return "$" + Math.round(n).toLocaleString();}
+function fmt(n){return "$" + (Math.round(n/1000)*1000).toLocaleString();}
+var CTA='<a href="https://calendly.com/ian-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold">Book a Call</a>';
+var FINE='<div class="fine">Estimate only, not an offer or approval. Confirmed on your free call.</div>';
 function calc(){
-  var revEl=document.getElementById('rev'), yrsEl=document.getElementById('yrs'), ficoEl=document.getElementById('fico'),
-      limitEl=document.getElementById('limit'), inqEl=document.getElementById('inq'), utilEl=document.getElementById('util'),
+  var fico=document.getElementById('fico').value,
+      limitV=document.getElementById('limit').value,
+      derog=document.getElementById('derog').value,
       out=document.getElementById('result');
-  if(revEl.value===""||yrsEl.value===""||ficoEl.value===""||inqEl.value===""||utilEl.value===""||limitEl.value===""){
-    out.innerHTML='<div class="placeholder">Please complete all six questions.</div>';return;
+  if(fico===""||limitV===""||derog===""){
+    out.innerHTML='<div class="placeholder">Answer the three questions and your estimated 0% funding range will appear right here.</div>';
+    return;
   }
-  var revBoost=+revEl.value, yrBoost=+yrsEl.value, fico=ficoEl.value,
-      limit=Math.max(0,+limitEl.value||0), inq=inqEl.value, util=utilEl.value;
-  var ficoMult={b:0.6,a:1.5,c:2.2,d:2.8,e:3.2}[fico];
-  var utilF={u1:1.1,u2:1.0,u3:0.75,u4:0.5}[util];
-  var inqF={i1:1.0,i2:0.85,i3:0.6}[inq];
-  var base = limit>0 ? limit*ficoMult : ficoMult*10000;
-  var est = base*utilF*inqF + revBoost + yrBoost;
-  est = Math.min(est, 150000);
-  est = Math.max(est, fico==='b'?3000:8000);
-  var low=Math.max(1000,Math.round(est*0.8/1000)*1000);
-  var high=Math.min(150000,Math.round(est*1.2/1000)*1000);
-  var tier, msg;
-  if(fico==='b'||(util==='u4'&&inq==='i3')){
-    tier='Optimization recommended';
-    msg='Your profile needs a few fixes before banks approve larger limits — exactly what we help with. Book a call and we\'ll map the plan.';
-  } else if(high>=100000){
-    tier='Strong candidate';
-    msg='You look well-positioned for a substantial round. A quick call confirms your exact number.';
-  } else {
-    tier='Solid starting point';
-    msg='You\'re in good shape for a first round, with room to grow as we optimize your profile.';
+  var limit=+limitV;
+  // Routing: recent negatives or low score -> cleanup; no card -> building
+  if(derog==='yes'||fico==='b'){
+    out.innerHTML='<div class="lbl">First step</div>'+
+      '<div class="tier">Credit cleanup</div>'+
+      '<div class="msg">With recent negatives or a score under 640, a quick credit cleanup comes first — and that\'s exactly what we help with. Book a call and we\'ll map your path to funding.</div>'+
+      CTA+FINE;
+    return;
   }
+  if(limit===0){
+    out.innerHTML='<div class="lbl">First step</div>'+
+      '<div class="tier">Credit building</div>'+
+      '<div class="msg">Without an existing card, you\'d start with a short credit-building step to unlock the best approvals. Book a call and we\'ll build your plan.</div>'+
+      CTA+FINE;
+    return;
+  }
+  var mult={e:[4,12],d:[3,9],c:[2,6],a:[1,3.5]}[fico];
+  var low=Math.min(limit*mult[0],150000), high=Math.min(limit*mult[1],150000);
   out.innerHTML='<div class="lbl">Estimated 0% funding you may qualify for</div>'+
     '<div class="amt">'+fmt(low)+' &ndash; '+fmt(high)+'</div>'+
-    '<div class="tier">'+tier+'</div><div class="msg">'+msg+'</div>'+
-    '<a href="https://calendly.com/ian-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold">Book a Call</a>'+
-    '<div class="fine">Estimate only, not an offer or approval. Confirmed on your free call.</div>';
+    '<div class="msg"><strong style="color:#fff">This is a ballpark based on your profile alone — before working with us.</strong> Optimizing your credit and sequencing your applications the right way is how clients push toward the top of this range and beyond. Book a call and we\'ll find your real number.</div>'+
+    CTA+FINE;
 }
 </script>
 </body>
