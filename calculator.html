@@ -182,6 +182,14 @@ function calc(){
   }
   var mult={e:[4,12],d:[3,9],c:[2,6],a:[1,3.5]}[fico];
   var low=Math.min(limit*mult[0],150000), high=Math.min(limit*mult[1],150000);
+  // Low estimate -> don't show a discouraging small number; route to a call
+  if(high < 25000){
+    out.innerHTML='<div class="lbl">You\'re a fit &mdash; let\'s talk</div>'+
+      '<div class="tier">Let\'s find your number</div>'+
+      '<div class="msg">Your profile qualifies for funding &mdash; and the exact amount depends on a few details we optimize together. A quick call gets you your real number, plus the fastest path to grow it.</div>'+
+      CTA+FINE;
+    return;
+  }
   out.innerHTML='<div class="lbl">Estimated 0% funding you may qualify for</div>'+
     '<div class="amt">'+fmt(low)+' &ndash; '+fmt(high)+'</div>'+
     '<div class="msg"><strong style="color:#fff">This is a ballpark based on your profile alone — before working with us.</strong> Optimizing your credit and sequencing your applications the right way is how clients push toward the top of this range and beyond. Book a call and we\'ll find your real number.</div>'+
