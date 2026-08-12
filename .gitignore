@@ -1,0 +1,9 @@
+# macOS junk
+.DS_Store
+**/.DS_Store
+
+# Internal business docs — do NOT publish (Vercel serves anything committed here)
+Consulting-Agreements/
+Consulting-Agreements-PDF/
+*.docx
+FundingKit-Service-Agreement-FINAL.md

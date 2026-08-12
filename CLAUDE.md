@@ -2,6 +2,14 @@
 
 This repo is the **yourfundingkit.com** website. Read this first when asked to change the site.
 
+## Editing the site from ANY computer / a NEW chat (quick start)
+Do this once per computer, then it "just works" every time:
+1. **Clone the repo** (if it's not already on this Mac): GitHub Desktop → **File → Clone repository → Funding-Kit** → clone to `~/Documents/GitHub/Funding-Kit`. (Sign into GitHub Desktop first if prompted.)
+2. **Start a Claude chat and connect this folder** — point Claude at `~/Documents/GitHub/Funding-Kit`. Claude auto-reads this `CLAUDE.md` and knows the whole setup.
+3. **Ask for the edit** ("change the headline to X", "update the calculator", etc.). Claude edits the `.html` files directly on disk.
+4. **Publish:** open **GitHub Desktop** → you'll see the changed files → type a summary → **Commit to main** → **Push origin**. Vercel auto-deploys in ~1–2 min.
+> Claude can edit the files but **cannot push** (no GitHub credentials in its sandbox) — you always do the Commit + Push step in GitHub Desktop. If two computers are involved, click **Fetch/Pull origin** in GitHub Desktop before editing so you have the latest.
+
 ## Stack & hosting
 - **Static HTML site** — no build step, no framework. Just edit the `.html` files directly.
 - **Hosted on Vercel.** Vercel auto-deploys on every push to `main` (usually live in 1–2 min).
