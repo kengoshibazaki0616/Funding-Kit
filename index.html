@@ -4,18 +4,20 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Funding Kit — 0% Business Funding, Done For You</title>
-<meta name="description" content="Funding Kit helps entrepreneurs and real estate investors secure up to $150,000 in 0% business funding." />
+<meta name="description" content="Funding Kit helps US business owners — including Japanese-owned businesses in the US — qualify for up to $150,000 in 0% intro business credit. Japanese-language support available." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://yourfundingkit.com/" />
 <meta property="og:title" content="Funding Kit — Up to $150,000 in 0% Business Funding" />
-<meta property="og:description" content="We help entrepreneurs and real estate investors secure 0% business funding — approved in as little as 14 days. Done for you." />
+<meta property="og:description" content="We help US business owners — including Japanese-owned businesses in the US — qualify for 0% intro business credit. Done for you. 日本語対応." />
 <meta property="og:image" content="https://yourfundingkit.com/og.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Funding Kit — Up to $150,000 in 0% Business Funding" />
-<meta name="twitter:description" content="0% business funding, done for you. Approved in as little as 14 days." />
+<meta name="twitter:description" content="0% intro business credit, done for you. US and Japanese-owned businesses in the US. 日本語対応." />
 <meta name="twitter:image" content="https://yourfundingkit.com/og.png" />
+<link rel="alternate" hreflang="ja" href="https://yourfundingkit.com/japan" />
+<link rel="alternate" hreflang="en" href="https://yourfundingkit.com/" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
@@ -103,6 +105,18 @@
 
   .calc-sec{background:var(--panel)}
 
+  /* Two lanes */
+  .lanes{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:940px;margin:0 auto}
+  @media(max-width:820px){.lanes{grid-template-columns:1fr}}
+  .lane{border:1px solid var(--line);border-radius:16px;padding:30px 28px;background:#fff;box-shadow:var(--sh)}
+  .lane .k{color:var(--gold-d);font-weight:600;letter-spacing:.14em;font-size:12px;text-transform:uppercase}
+  .lane h3{font-size:20px;margin:10px 0 12px}
+  .lane p{color:var(--soft);font-size:15px;margin-bottom:12px}
+  .lane ul{list-style:none;color:var(--soft);font-size:15px;margin-bottom:16px}
+  .lane li{padding-left:18px;position:relative;margin-bottom:6px}
+  .lane li:before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+  .lane a.more{color:var(--navy);font-weight:600;font-size:14.5px;border-bottom:1.5px solid var(--gold);padding-bottom:1px}
+
   /* FAQ */
   .faq{max-width:760px;margin:0 auto}
   .q{border-bottom:1px solid var(--line);padding:22px 2px}
@@ -127,7 +141,7 @@
     <img src="logo-mark.png" alt="Funding Kit" class="brand-mark"><img src="logo-text.png" alt="Funding Kit — Credit. Capital. Opportunity." class="brand-text">
   </a>
   <nav class="nav-links" onclick="this.classList.remove('open')">
-    <a href="#about">About</a><a href="calculator">Calculator</a><a href="#faq">FAQ</a>
+    <a href="#about">About</a><a href="calculator">Calculator</a><a href="#faq">FAQ</a><a href="japan" lang="ja">日本語</a>
     <a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a>
     <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold" style="padding:10px 20px">Book a Call</a>
   </nav>
@@ -137,13 +151,13 @@
 <section class="hero"><div class="wrap in">
   <div class="kick">0% Business Funding</div>
   <h1>Get up to <span>$150,000</span> in 0% intro business credit. We handle the structuring and the applications, so you go from first call to funded.</h1>
-  <p>We help entrepreneurs and investors access 0% intro business credit — and if you're looking for more, book a call and we'll figure out the right path together.</p>
+  <p>We help entrepreneurs and investors access 0% intro business credit — and if you're looking for more, book a call and we'll figure out the right path together. Japanese-owned businesses in the US welcome; calls available in Japanese.</p>
   <div class="cta">
     <a href="calculator" class="btn btn-gold">Check what you qualify for</a>
     <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.3)">Talk to Kengo</a>
   </div>
   <div class="trust">
-    <span>No credit check to see your options</span><span>Done for you</span><span>Funded in as little as 14 days</span>
+    <span>No credit check to see your options</span><span>Done for you</span><span>Funded in as little as 14 days</span><span lang="ja">日本語対応</span>
   </div>
 </div></section>
 
@@ -166,6 +180,35 @@
   </div>
 </div></section>
 
+<section id="who"><div class="wrap">
+  <div class="lead"><span class="k">Who We Work With</span><h2>Two kinds of client, one method</h2>
+    <p>The banks underwrite the person who signs, not the business. That is true whether you were born in Ohio or moved here from Tokyo &mdash; so the path is the same, and the starting point is not.</p></div>
+  <div class="lanes">
+    <div class="lane">
+      <span class="k">US business owners</span>
+      <h3>You have credit history &mdash; it just needs work</h3>
+      <p>Most owners who get declined have a file with damage in it, or a file that is fine but structured badly for what they are asking for.</p>
+      <ul>
+        <li>Collections, charge-offs or late payments to clean up first</li>
+        <li>Utilization, limits and inquiries to put in order</li>
+        <li>Applications sequenced across the right lenders, in the right order</li>
+      </ul>
+      <a class="more" href="calculator">Check what you qualify for &rarr;</a>
+    </div>
+    <div class="lane">
+      <span class="k">Japanese-owned businesses in the US</span>
+      <h3 lang="ja">日系オーナーの方へ &mdash; 日本語でご相談いただけます</h3>
+      <p>Owners who moved to the US usually have no damage at all. There is nothing to dispute &mdash; the file is simply thin or new. That is a build, not a repair, and it is a different plan.</p>
+      <ul>
+        <li>Three questions decide it: SSN, living in the US, and how deep your US credit file is</li>
+        <li>Your visa type &mdash; E-1, E-2, L-1, H-1B, green card &mdash; makes no difference to funding</li>
+        <li>Building a fundable file realistically takes about 12 months, and we will say so honestly</li>
+      </ul>
+      <a class="more" href="japan" lang="ja">日本語のご案内を見る &rarr;</a>
+    </div>
+  </div>
+</div></section>
+
 <section id="how" class="calc-sec"><div class="wrap">
   <div class="lead"><span class="k">How It Works</span><h2>Simple, and done for you</h2></div>
   <div class="steps">
@@ -182,6 +225,8 @@
     <div class="q"><h3>How much can I access?</h3><p>Typically $10,000 to $150,000, depending on your credit and business setup. The calculator gives your realistic range.</p></div>
     <div class="q"><h3>How long does it take?</h3><p>Most clients are funded within a few weeks. Some go as fast as 14 days, depending on their profile.</p></div>
     <div class="q"><h3>Do I need collateral or perfect credit?</h3><p>No collateral is required. Stronger credit helps, but structure and sequencing matter just as much, and we'll tell you honestly where you stand.</p></div>
+    <div class="q"><h3>I moved to the US and have no credit history here. Can you help?</h3><p>Usually yes, but as a build rather than a repair. What matters is whether you have a Social Security number, whether you live in the US, and how deep your US credit file is &mdash; your visa type is not a factor. Building a file that lenders will actually fund on takes about 12 months, and we would rather tell you that up front than sell you a shortcut. <a href="japan" lang="ja" style="color:var(--navy);font-weight:600">日本語のご案内はこちら</a>.</p></div>
+    <div class="q"><h3>Are calls available in Japanese?</h3><p lang="ja">はい。ご相談・資料・やりとりは日本語で対応いたします。<a href="japan" style="color:var(--navy);font-weight:600">日本語のご案内</a></p></div>
   </div>
 </div></section>
 
@@ -197,7 +242,7 @@
 <footer><div class="wrap foot">
   <div><strong style="color:var(--navy)">Funding Kit</strong></div>
   <div class="social"><a href="https://www.instagram.com/kengo_shibz" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/kengo_shibz" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/1191212280751117" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/kengoshibazaki" target="_blank" rel="noopener">LinkedIn</a></div>
-  <div>Mon-Fri, 9am-6pm &nbsp;·&nbsp; kengo@yourfundingkit.com &nbsp;·&nbsp; <a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a></div>
+  <div>Mon-Fri, 9am-6pm &nbsp;·&nbsp; kengo@yourfundingkit.com &nbsp;·&nbsp; <a href="japan" lang="ja">日本語</a> &nbsp;·&nbsp; <a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a></div>
 </div>
 <div class="disc">Funding Kit is a funding consulting service, not a lender or bank. The calculator provides a rough estimate for informational purposes only — it is not an offer, pre-approval, or guarantee of funding. Amounts, rates, and timelines vary by applicant and lender. "0% interest" refers to introductory-rate business credit products offered by third-party financial institutions, subject to their approval and terms. Nothing here is financial or legal advice.</div>
 </footer>
