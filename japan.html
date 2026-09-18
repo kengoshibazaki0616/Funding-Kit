@@ -3,226 +3,281 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>米国でのビジネス資金調達を、日本語で — Funding Kit</title>
-<meta name="description" content="米国で事業を営む日系オーナーの方へ。無担保のビジネスクレジットの審査要件を満たせるよう、クレジットの整備から申込の設計までを日本語でご支援します。" />
+<title>米国での事業資金調達を、日本語で — Funding Kit</title>
+<meta name="description" content="米国で事業を営む日系オーナーの方へ。無担保のビジネスクレジットの審査要件を満たせるよう、クレジットの整備から申込の設計までを日本語でご支援します。無料の診断ツールあり。" />
+<meta name="theme-color" content="#0a1120" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://yourfundingkit.com/japan" />
-<meta property="og:title" content="米国でのビジネス資金調達を、日本語で — Funding Kit" />
+<meta property="og:title" content="米国での事業資金調達を、日本語で — Funding Kit" />
 <meta property="og:description" content="在米の日系ビジネスオーナー向け。米国ビジネスクレジットの仕組みと、審査要件を満たすまでの道筋を日本語で。" />
 <meta property="og:image" content="https://yourfundingkit.com/og.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="米国でのビジネス資金調達を、日本語で — Funding Kit" />
-<meta name="twitter:description" content="在米の日系ビジネスオーナー向け。日本語でご相談いただけます。" />
+<meta name="twitter:title" content="米国での事業資金調達を、日本語で — Funding Kit" />
+<meta name="twitter:description" content="在米の日系ビジネスオーナー向け。米国ビジネスクレジットの仕組みと、審査要件を満たすまでの道筋を日本語で。" />
 <meta name="twitter:image" content="https://yourfundingkit.com/og.png" />
 <link rel="alternate" hreflang="en" href="https://yourfundingkit.com/" />
 <link rel="alternate" hreflang="ja" href="https://yourfundingkit.com/japan" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 <style>
 
-  :root{
-    --bg:#ffffff; --ink:#141b26; --soft:#5c6675; --line:#e9edf2; --panel:#f7f9fc;
-    --navy:#152238; --navy2:#1e2f4d; --gold:#c19a44; --gold-d:#a37f2f;
-    --sans:'Inter','Noto Sans JP',system-ui,-apple-system,'Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif;
-    --disp:'Sora','Inter','Noto Sans JP',system-ui,'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;
-    --maxw:1080px;
-    --sh:0 12px 34px rgba(20,27,38,.08);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
-  a{text-decoration:none;color:inherit}
-  h1,h2,h3{font-family:var(--disp);font-weight:700;letter-spacing:-.02em;color:var(--navy);line-height:1.18}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:600;border-radius:10px;padding:14px 28px;font-size:15px;cursor:pointer;border:none;transition:transform .18s,background .18s}
-  .btn-gold{background:var(--gold);color:#fff}
-  .btn-gold:hover{transform:translateY(-2px);background:var(--gold-d)}
-  .btn-navy{background:var(--navy);color:#fff}
-  .btn-navy:hover{transform:translatey(-2px);background:#1d2e4d}
-  .btn-line{background:transparent;color:var(--navy);border:1px solid #d5dae2}
-  .btn-line:hover{border-color:var(--navy)}
+  body{line-height:1.92;line-break:strict;word-break:normal;overflow-wrap:normal}
+  h1,h2,h3{line-height:1.42;letter-spacing:-.01em;line-break:strict;word-break:normal;overflow-wrap:normal}
+  .hero h1{line-height:1.3}
+  .hero h1 .grad{white-space:nowrap}
+  .lead h2,.lead p,.hero h1,.cta-band h2,.card h3,.step h3{text-wrap:balance}
+  .fld label{line-height:1.6}
 
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:92px}
-  .brand{display:flex;align-items:center;gap:13px}
-  .brand-mark{height:50px;width:auto;display:block}
-  .brand-text{height:40px;width:auto;display:block}
-  @media(max-width:820px){.brand-mark{height:40px}.brand-text{height:32px}}
-  .nav-links{display:flex;gap:30px;align-items:center}
-  .nav-links a{color:var(--soft);font-weight:500;font-size:14.5px}
-  .nav-links a:hover{color:var(--ink)}
-  .nav-toggle{display:none;background:none;border:none;color:var(--navy);cursor:pointer;padding:6px;line-height:0}
-  @media(max-width:820px){
-    .nav-toggle{display:inline-flex}
-    .nav-links{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:6px 0;box-shadow:0 14px 28px rgba(20,27,38,.1);display:none}
-    .nav-links.open{display:flex}
-    .nav-links a{padding:13px 24px;font-size:16px;color:var(--ink)}
-    .nav-links a.btn{margin:10px 24px;text-align:center;justify-content:center}
-  }
-
-  .hero{background:var(--navy);color:#fff;padding:96px 0 92px;position:relative;overflow:hidden}
-  .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(620px 320px at 88% 0%,rgba(193,154,68,.16),transparent 62%)}
-  .hero .in{position:relative;max-width:720px}
-  .hero .kick{color:var(--gold);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px}
-  .hero h1{font-size:clamp(34px,5vw,52px);color:#fff;line-height:1.08}
-  .hero h1 span{color:var(--gold)}
-  .hero p{color:#c3ccda;font-size:18.5px;margin:22px 0 32px;max-width:580px}
-  .hero .cta{display:flex;gap:13px;flex-wrap:wrap}
-  .hero .trust{margin-top:34px;color:#aeb8c8;font-size:14px;display:flex;gap:22px;flex-wrap:wrap}
-  .hero .trust span{display:flex;gap:8px;align-items:center}
-  .hero .trust span:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold)}
-
-  section{padding:84px 0}
-  .lead{max-width:640px;margin:0 auto 46px;text-align:center}
-  .lead .k{color:var(--gold-d);font-weight:600;letter-spacing:.14em;font-size:12.5px;text-transform:uppercase}
-  .lead h2{font-size:clamp(26px,3.4vw,36px);margin-top:12px}
-  .lead p{color:var(--soft);margin-top:12px;font-size:17px}
-
-  /* Founder */
-  .founder{display:flex;flex-wrap:wrap;gap:44px;align-items:center;max-width:920px;margin:0 auto}
-  .founder .photo{flex:0 0 180px;text-align:center;margin:0 auto}
-  .founder .av{width:170px;height:170px;border-radius:50%;margin:0 auto 14px;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:var(--disp);font-weight:700;font-size:48px;border:2px solid var(--gold)}
-  .founder .av img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block}
-  .founder .nm{font-family:var(--disp);font-weight:700;color:var(--navy);font-size:19px}
-  .founder .rl{color:var(--gold-d);font-size:13px;font-weight:600}
-  .founder .bio{flex:1;min-width:300px}
-  .founder .bio .k{color:var(--gold-d);font-weight:600;letter-spacing:.14em;font-size:12.5px;text-transform:uppercase}
-  .founder .bio h2{font-size:clamp(24px,3vw,32px);margin:10px 0 16px}
-  .founder .bio p{color:var(--soft);font-size:15.5px;margin-bottom:14px}
-  .founder .quote{color:var(--navy);font-size:16px;font-style:italic;border-left:3px solid var(--gold);padding-left:16px}
-
-  /* Steps */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;max-width:940px;margin:0 auto}
-  @media(max-width:820px){.steps{grid-template-columns:1fr;gap:26px}}
-  .step{text-align:center}
-  .step .b{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold-d);display:grid;place-items:center;font-family:var(--disp);font-weight:700;font-size:18px;margin:0 auto 16px}
-  .step h3{font-size:19px;margin-bottom:8px}
-  .step p{color:var(--soft);font-size:15px}
-  .secure{text-align:center;color:var(--soft);font-size:15.5px;max-width:640px;margin:44px auto 0}
-  .secure b{color:var(--navy);font-weight:600}
-
-  .calc-sec{background:var(--panel)}
-
-  /* Two lanes */
-  .lanes{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:940px;margin:0 auto}
-  @media(max-width:820px){.lanes{grid-template-columns:1fr}}
-  .lane{border:1px solid var(--line);border-radius:16px;padding:30px 28px;background:#fff;box-shadow:var(--sh)}
-  .lane .k{color:var(--gold-d);font-weight:600;letter-spacing:.14em;font-size:12px;text-transform:uppercase}
-  .lane h3{font-size:20px;margin:10px 0 12px}
-  .lane p{color:var(--soft);font-size:15px;margin-bottom:12px}
-  .lane ul{list-style:none;color:var(--soft);font-size:15px;margin-bottom:16px}
-  .lane li{padding-left:18px;position:relative;margin-bottom:6px}
-  .lane li:before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
-  .lane a.more{color:var(--navy);font-weight:600;font-size:14.5px;border-bottom:1.5px solid var(--gold);padding-bottom:1px}
-
-  /* FAQ */
-  .faq{max-width:760px;margin:0 auto}
-  .q{border-bottom:1px solid var(--line);padding:22px 2px}
-  .q h3{font-size:16.5px;margin-bottom:6px}
-  .q p{color:var(--soft);font-size:15px}
-
-  .cta-band{background:var(--navy);border-radius:20px;padding:52px 34px;text-align:center;color:#fff;max-width:900px;margin:0 auto}
-  .cta-band h2{color:#fff;font-size:clamp(25px,3.2vw,34px)}
-  .cta-band p{color:#c3ccda;margin:12px 0 24px;font-size:17px}
-  .cta-band .row{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
-
-  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--soft)}
-  .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:14px;align-items:center}
-  .foot a{color:var(--navy);font-weight:600}
-  .social{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-  .disc{max-width:var(--maxw);margin:20px auto 0;padding:0 24px;color:#93a0b5;font-size:11.5px;line-height:1.55}
-
-  body{line-height:1.9}
-  h1,h2,h3{line-height:1.45}
-  .hero h1{line-height:1.3;word-break:keep-all;overflow-wrap:anywhere}
-  .hero h1 span{white-space:nowrap}
-  .lead h2,.lead p,.step h3,.step p,.qa .item h3,.note,.secure{word-break:keep-all;overflow-wrap:anywhere}
-  .qa{max-width:800px;margin:0 auto;display:grid;gap:18px}
-  .qa .item{border:1px solid var(--line);border-radius:14px;padding:24px 26px;background:#fff;box-shadow:var(--sh)}
-  .qa .item h3{font-size:17.5px;margin-bottom:8px}
-  .qa .item p{color:var(--soft);font-size:15.5px}
-  .note{max-width:800px;margin:26px auto 0;background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:22px 24px;color:var(--soft);font-size:15px}
-  .note b{color:var(--navy);font-weight:600}
+  .notebox{max-width:900px;margin:34px auto 0;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 16px 16px 0;padding:26px 28px;color:var(--soft);font-size:15px}
+  .notebox b{color:var(--navy);font-weight:600}
+  .dark .notebox{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);border-left-color:var(--gold);color:#a9b7cb}
+  .dark .notebox b{color:#fff}
 </style>
 </head>
 <body>
 <header id="top"><div class="wrap nav">
   <a href="index.html" class="brand" aria-label="Funding Kit" style="cursor:pointer">
-    <img src="logo-mark.png" alt="Funding Kit" class="brand-mark"><img src="logo-text.png" alt="Funding Kit" class="brand-text">
+    <img src="logo-mark.png" alt="Funding Kit" class="brand-mark"><img src="logo-text.png" alt="Funding Kit — Credit. Capital. Opportunity." class="brand-text">
   </a>
   <nav class="nav-links" onclick="this.classList.remove('open')">
-    <a href="#three">3つの質問</a><a href="#paths">3つの進み方</a><a href="#myths">よくある誤解</a>
-    <a href="index.html" lang="en">English</a>
-    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold" style="padding:10px 20px">無料相談を予約</a>
+    <a href="#three">3つの質問</a><a href="#calc">無料診断</a><a href="#paths">3つの進み方</a><a href="#myths">よくある誤解</a><a href="index.html" lang="en">English</a>
+    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold" style="padding:11px 20px">無料相談を予約</a>
   </nav>
-  <button class="nav-toggle" aria-label="メニュー" onclick="this.closest('.nav').querySelector('.nav-links').classList.toggle('open')"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.closest('.nav').querySelector('.nav-links').classList.toggle('open')"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
 </div></header>
 
-<section class="hero"><div class="wrap in">
-  <div class="kick">米国ビジネスクレジット</div>
-  <h1>米国での事業資金調達を、<span>日本語で</span>。</h1>
-  <p>米国で事業を営まれる日系オーナーの方が、無担保のビジネスクレジット（0％導入金利）の審査要件を満たせるよう、クレジットの整備から申込の順番の設計までをご支援します。</p>
-  <div class="cta">
-    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold">無料相談を予約する</a>
-    <a href="calculator" class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.3)" lang="en">Check what you qualify for</a>
+<section class="hero"><div class="wrap grid2">
+  <div>
+    <div class="eyebrow">米国ビジネスクレジット</div>
+    <h1>米国での事業資金調達を、<span class="grad">日本語で</span>。</h1>
+    <p class="sub">米国で事業を営まれる日系オーナーの方が、無担保のビジネスクレジット（0％導入金利）の審査要件を満たせるよう、クレジットの整備から申込の順番の設計までをご支援します。担保は不要です。</p>
+    <div class="cta">
+      <a href="#calc" class="btn btn-gold">無料で診断する <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+      <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-ghost">無料相談を予約する</a>
+    </div>
+    <div class="trust">
+      <span>ご相談は日本語で</span><span>担保不要</span><span>クレジットチェックなし</span><span>無理な場合は率直にお伝えします</span>
+    </div>
   </div>
-  <div class="trust">
-    <span>ご相談は日本語で</span><span>担保不要</span><span>無理な場合は率直にお伝えします</span>
+  <div class="hcard">
+    <div class="lbl">資金調達レンジ</div>
+    <div class="big grad">$10k &ndash; $150k</div>
+    <div class="cap">どのあたりになるかは、スコア・現在お持ちのカードの最高限度額・直近の履歴で決まります。</div>
+    <div class="hbar"><i data-fill="74%"></i></div>
+    <div class="hrow"><span>$10,000</span><span>$150,000</span></div>
+    <div class="note">4つの質問だけ。クレジットチェックはありません。<br><a href="#calc" class="more" style="color:#fff;margin-top:10px">診断を実行する <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </div></section>
 
+<section class="stats" style="padding:0"><div class="wrap" style="padding:0"><div class="statrow">
+  <div class="stat"><b>0%</b><span>導入期間金利のビジネスクレジット</span></div>
+  <div class="stat"><b>$10k&ndash;$150k</b><span>診断が見積もるレンジ</span></div>
+  <div class="stat"><b>不要</b><span>担保</span></div>
+  <div class="stat"><b>4</b><span>進み方：調達・修復・構築・ご紹介</span></div>
+</div></div></section>
+
 <section id="three"><div class="wrap">
-  <div class="lead"><span class="k">まずここから</span><h2>結果を左右するのは、3つだけです</h2>
+  <div class="lead rv"><div class="eyebrow">まずここから</div><h2>結果を左右するのは、3つだけです</h2>
     <p>米国のビジネスカードは、会社ではなく「申し込む個人」の信用で審査され、その方が個人保証をします。だから見るべきものも、この3つになります。</p></div>
-  <div class="qa">
-    <div class="item"><h3>1. SSN（ソーシャルセキュリティナンバー）をお持ちですか</h3><p>就労許可のある方なら取得できます。E・Lビザの配偶者の方も対象です。まだお持ちでない場合は、それが最初のステップになります（Form SS-5、無料、およそ2週間）。</p></div>
-    <div class="item"><h3>2. 米国にお住まいですか</h3><p>個人保証をされる方の居住地が米国外の場合、審査はほぼ通りません。事業が米国法人であっても、ここは別の話です。</p></div>
-    <div class="item"><h3>3. 米国でのクレジット履歴はどのくらいありますか</h3><p>年数だけでなく、「ご自身名義のカードの最高限度額」が重要です。家族カードの追加使用者（AU）だけのファイルは、スコアが高くても薄いファイルと判断されます。</p></div>
+  <div class="cards c3">
+    <div class="card rv"><div class="ico"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>1. SSNをお持ちですか</h3>
+      <p>就労許可のある方なら取得できます。E・Lビザの配偶者の方も対象です。まだお持ちでない場合は、それが最初のステップになります（Form SS-5、無料、およそ2週間）。</p></div>
+    <div class="card rv"><div class="ico"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg></div><h3>2. 米国にお住まいですか</h3>
+      <p>個人保証をされる方の居住地が米国外の場合、審査はほぼ通りません。事業が米国法人であっても、ここは別の話です。</p></div>
+    <div class="card rv"><div class="ico"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><rect x="5" y="12" width="3.6" height="6" rx="1"/><rect x="10.2" y="8" width="3.6" height="10" rx="1"/><rect x="15.4" y="4" width="3.6" height="14" rx="1"/></svg></div><h3>3. 米国での履歴はどのくらいですか</h3>
+      <p>年数だけでなく「ご自身名義のカードの最高限度額」が重要です。家族カードの追加使用者（AU）だけのファイルは、スコアが高くても薄いファイルと判断されます。</p></div>
   </div>
-  <div class="note"><b>ビザの種類は、資金調達の可否に影響しません。</b> E-1、E-2、L-1、H-1B、グリーンカード — どれであっても結果は同じです。<br><br>
+  <div class="notebox rv"><b>ビザの種類は、資金調達の可否に影響しません。</b> E-1、E-2、L-1、H-1B、グリーンカード — どれであっても結果は同じです。<br><br>
   逆に、<b>SSNがない場合や、保証をされる方が米国外にお住まいの場合は、現時点ではお力になれません。</b>その場合はそのように率直にお伝えし、できる範囲で適切な先をご案内します。まずは配偶者の方が対象になるケースもありますので、一度ご相談ください。</div>
 </div></section>
 
-<section id="paths" class="calc-sec"><div class="wrap">
-  <div class="lead"><span class="k">進め方</span><h2>3つの道筋のどれかになります</h2>
+<section id="calc" class="tint"><div class="wrap">
+  <div class="lead rv"><div class="eyebrow">無料診断</div><h2>いまの位置を、その場で確認できます</h2>
+    <p>4つの質問にお答えいただくだけです。クレジットチェックはありません。申込でもありません。</p></div>
+  <div class="calc">
+    <div class="calc-card rv">
+      <div class="fld"><label>SSN と 米国居住について、当てはまるものは？</label>
+        <select id="gate" onchange="calc()">
+          <option value="">選択してください…</option>
+          <option value="yes">SSNがあり、米国に住んでいる</option>
+          <option value="abroad">SSNはあるが、米国外に住んでいる</option>
+          <option value="nossn">SSNをまだ持っていない</option>
+        </select></div>
+      <div class="fld"><label>クレジットスコアはどのくらいですか？</label>
+        <select id="fico" onchange="calc()">
+          <option value="">選択してください…</option>
+          <option value="e">760以上</option>
+          <option value="d">720 〜 759</option>
+          <option value="c">680 〜 719</option>
+          <option value="a">640 〜 679</option>
+          <option value="b">640未満</option>
+          <option value="none">スコアがまだ出ていない / わからない</option>
+        </select></div>
+      <div class="fld"><label>ご自身名義のカードの、現在の最高限度額は？</label>
+        <select id="limit" onchange="calc()">
+          <option value="">選択してください…</option>
+          <option value="20000">$15,000以上</option>
+          <option value="12500">$10,000 〜 $15,000</option>
+          <option value="7500">$5,000 〜 $10,000</option>
+          <option value="3500">$2,000 〜 $5,000</option>
+          <option value="1500">$2,000未満</option>
+          <option value="0">ご自身名義のカードはまだない</option>
+        </select></div>
+      <div class="fld"><label>過去2年以内に、支払遅延・コレクション・破産はありますか？</label>
+        <select id="derog" onchange="calc()">
+          <option value="">選択してください…</option>
+          <option value="no">ない</option>
+          <option value="yes">ある</option>
+        </select></div>
+    </div>
+    <div class="result rv" id="result">
+      <div class="placeholder">4つの質問にお答えいただくと、ここに結果が表示されます。</div>
+    </div>
+  </div>
+  <p class="caveat" style="color:var(--soft);max-width:880px">ご自己申告に基づく目安であり、クレジットチェックでも申込でもありません。融資の申し出・事前承認・保証ではなく、承認の可否と条件を決めるのは各金融機関です。</p>
+</div></section>
+
+<section id="paths"><div class="wrap">
+  <div class="lead rv"><div class="eyebrow">進め方</div><h2>3つの道筋のどれかになります</h2>
     <p>どれになるかは、ご相談の中で実際のファイルを見てから判断します。</p></div>
-  <div class="steps">
-    <div class="step"><div class="b">1</div><h3>クレジット修復</h3><p>コレクション、チャージオフ、支払遅延などがある場合。まずはここを整えます。</p></div>
+  <div class="steps rv">
+    <div class="step"><div class="b">1</div><h3>クレジット修復</h3><p>コレクション、チャージオフ、支払遅延などがある場合。まずはここを整えます。異議申立てを重ねる作業なので、数ヶ月かかります。</p></div>
     <div class="step"><div class="b">2</div><h3>資金調達</h3><p>すでに要件を満たしている場合。申込の順番と組み立てを設計して進めます。</p></div>
     <div class="step"><div class="b">3</div><h3>クレジット構築</h3><p>渡米後で履歴がない・薄い場合。消すべき傷がないので、修復ではなく「積み上げ」になります。</p></div>
   </div>
-  <p class="secure"><b>渡米後の方の大半は3番です。</b>スコアが出るまでに数ヶ月、そのスコアでご自身名義のカードを作り、そのカードが半年ほど稼働して初めて審査の土俵に乗ります。<b>現実的には9〜12ヶ月です。</b>「2ヶ月で」という説明をされたことがあれば、それは不正確です。</p>
+  <div class="notebox rv"><b>渡米後の方の大半は3番です。</b>スコアが出るまでに数ヶ月、そのスコアでご自身名義のカードを作り、そのカードが半年ほど稼働して初めて審査の土俵に乗ります。<b>現実的には9〜12ヶ月です。</b>「2ヶ月で」という説明をされたことがあれば、それは不正確です。</div>
 </div></section>
 
-<section id="myths"><div class="wrap">
-  <div class="lead"><span class="k">よくある誤解</span><h2>これだけは先に知っておいてください</h2></div>
-  <div class="qa">
-    <div class="item"><h3>Form SS-4 を出せば信用がつくわけではありません</h3><p>SS-4 は「会社」が EIN（雇用者識別番号）を取るための書類です。個人の信用には何の効果もありません。審査されるのはあくまで、個人保証をする人間のクレジットです。</p></div>
-    <div class="item"><h3>「ITINのスコア」というものは存在しません</h3><p>クレジットファイルは「番号」に紐づきます。ITINで積んだ履歴はそのITINに付いており、後からSSNを取得しても自動では引き継がれません（各ビューローに紐付けを依頼できる場合はあります）。</p></div>
-    <div class="item"><h3>EIN は IRS から無料で取得できます</h3><p>海外からの申請は電話（+1-267-941-1099）でその場で発行されます。EIN取得に料金を請求する業者にはご注意ください。</p></div>
-    <div class="item"><h3>Form 5472 の提出義務をご存知ですか</h3><p>外国の方が100％所有するシングルメンバーLLCには提出義務があり、未提出の罰則は $25,000 です。資金調達とは別の話ですが、見落とされていることが多いため先にお伝えしています。税務のご判断は必ず貴社のCPA・弁護士へご確認ください。</p></div>
-    <div class="item"><h3>事業が新しいことは、問題ではありません</h3><p>この種のカードは事業の決算書を見ずに審査されます。設立3ヶ月の会社でも、個人のファイルができていれば進められます。高額な「シェルフコーポレーション」の購入は、この目的には必要ありません。</p></div>
+<section class="dark"><div class="wrap">
+  <div class="lead rv"><div class="eyebrow">仕組み</div><h2>なぜ金額が大きくなるのか</h2>
+    <p>1社に申し込めば、カードは1枚です。金額が積み上がるのは「順番」によるもので、複数の発行会社に、正しい順序で、短い期間の中で申し込みます。審査されるのは毎回、ご自身の個人ファイルと、ご自身が署名する個人保証です。</p></div>
+  <div class="stack rv">
+    <div class="srow"><div class="n">発行会社 1</div><div class="t"><i data-fill="62%"></i></div><div class="v">$35,000</div></div>
+    <div class="srow"><div class="n">発行会社 2</div><div class="t"><i data-fill="53%"></i></div><div class="v">$30,000</div></div>
+    <div class="srow"><div class="n">発行会社 3</div><div class="t"><i data-fill="71%"></i></div><div class="v">$40,000</div></div>
+    <div class="srow"><div class="n">発行会社 4</div><div class="t"><i data-fill="44%"></i></div><div class="v">$25,000</div></div>
+    <div class="srow"><div class="n">発行会社 5</div><div class="t"><i data-fill="35%"></i></div><div class="v">$20,000</div></div>
+    <div class="stotal"><span>参考合計</span><b class="grad">$150,000</b></div>
+  </div>
+  <p class="caveat rv">仕組みを示すための図であり、実例ではありません。発行会社、金額、順序、承認の件数は申請者ごとに異なります。見積もり・融資の申し出・事前承認・典型的な結果を示すものではありません。</p>
+</div></section>
+
+<section id="myths" class="tint"><div class="wrap">
+  <div class="lead rv"><div class="eyebrow">よくある誤解</div><h2>これだけは先に知っておいてください</h2></div>
+  <div class="faq rv">
+    <details class="q"><summary>Form SS-4 を出せば信用がつくわけではありません</summary><div class="a">SS-4 は「会社」が EIN（雇用者識別番号）を取るための書類です。個人の信用には何の効果もありません。審査されるのはあくまで、個人保証をする人間のクレジットです。</div></details>
+    <details class="q"><summary>「ITINのスコア」というものは存在しません</summary><div class="a">クレジットファイルは「番号」に紐づきます。ITINで積んだ履歴はそのITINに付いており、後からSSNを取得しても自動では引き継がれません（各ビューローに紐付けを依頼できる場合はあります）。</div></details>
+    <details class="q"><summary>EIN は IRS から無料で取得できます</summary><div class="a">海外からの申請は電話（+1-267-941-1099）でその場で発行されます。EIN取得に料金を請求する業者にはご注意ください。</div></details>
+    <details class="q"><summary>Form 5472 の提出義務をご存知ですか</summary><div class="a">外国の方が100％所有するシングルメンバーLLCには提出義務があり、未提出の罰則は $25,000 です。資金調達とは別の話ですが、見落とされていることが多いため先にお伝えしています。税務のご判断は必ず貴社のCPA・弁護士へご確認ください。</div></details>
+    <details class="q"><summary>事業が新しいことは、問題ではありません</summary><div class="a">この種のカードは事業の決算書を見ずに審査されます。設立3ヶ月の会社でも、個人のファイルができていれば進められます。高額な「シェルフコーポレーション」の購入は、この目的には必要ありません。</div></details>
+    <details class="q"><summary>スコアの上昇や、金額を保証することはできますか</summary><div class="a">できません。米国の法律（Credit Repair Organizations Act）により、当社のような事業者がスコアの上昇や特定の記録の削除をお約束することは禁じられています。もしそれを約束する業者があれば、言ってはいけないことを言っています。当社がお約束できるのは、費用が発生する前に現状を率直にお伝えすることと、お力になれない場合はそう申し上げることです。</div></details>
   </div>
 </div></section>
 
-<section id="apply" class="calc-sec"><div class="wrap"><div class="cta-band">
+<section id="apply"><div class="wrap"><div class="cta-band rv">
   <h2>まずは、現在地を正確に知るところから</h2>
   <p>30分の無料相談です。現状を伺ったうえで、どの道筋になるかを率直にお伝えします。お力になれない場合は、そのように申し上げます。</p>
   <div class="row">
-    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold">無料相談を予約する</a>
-    <a href="mailto:kengo@yourfundingkit.com" class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.3)">メールで問い合わせる</a>
+    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold">無料相談を予約する <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+    <a href="mailto:kengo@yourfundingkit.com" class="btn btn-ghost">メールで問い合わせる</a>
   </div>
 </div></div></section>
-
 <footer><div class="wrap foot">
   <div><strong style="color:var(--navy)">Funding Kit</strong></div>
   <div class="social"><a href="https://www.instagram.com/kengo_shibz" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/kengo_shibz" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/1191212280751117" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/kengoshibazaki" target="_blank" rel="noopener">LinkedIn</a></div>
   <div>kengo@yourfundingkit.com &nbsp;·&nbsp; <a href="index.html" lang="en">English</a> &nbsp;·&nbsp; <a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a></div>
 </div>
-<div class="disc">Funding Kit は資金調達のコンサルティングサービスであり、金融機関・貸金業者ではありません。本ページの内容は一般的な情報提供を目的としたものであり、融資の申し込み・事前承認・保証ではありません。調達可能額、金利、所要期間は申請者及び金融機関により異なります。「0％金利」とは第三者の金融機関が提供する導入期間金利の商品を指し、各社の審査と条件に服します。<b>法律上、クレジットスコアの上昇、特定の記録の削除、及び調達金額を保証することはできません。</b>本ページは金融・法律・税務・移民に関する助言を構成するものではありません。</div>
+<div class="disc">Funding Kit は資金調達のコンサルティングサービスであり、金融機関・貸金業者ではありません。診断ツールの結果を含む本ページの内容は一般的な情報提供を目的としたものであり、融資の申し込み・事前承認・保証ではありません。調達可能額、金利、所要期間は申請者及び金融機関により異なり、結果をお約束するものではありません。「0％金利」とは第三者の金融機関が提供する導入期間金利の商品を指し、各社の審査と条件に服します。当社はいかなる金融機関・カード発行会社とも提携・代理関係にありません。<b>法律上、クレジットスコアの上昇、特定の記録の削除、及び調達金額を保証することはできません。</b>本ページは金融・法律・税務・移民に関する助言を構成するものではありません。</div>
 </footer>
+<div class="scta">
+  <a href="#calc" class="btn btn-gold">無料診断</a>
+  <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-ghost">無料相談</a>
+</div>
+
+<script>
+function fmt(n){return "$" + (Math.round(n/1000)*1000).toLocaleString();}
+var CTA='<a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold">無料相談を予約する</a>';
+var FINE='<div class="fine">目安であり、融資の申し出・事前承認・保証ではありません。実際の数字は無料相談で確認します。</div>';
+function calc(){
+  var gate=document.getElementById('gate').value,
+      fico=document.getElementById('fico').value,
+      limitV=document.getElementById('limit').value,
+      derog=document.getElementById('derog').value,
+      out=document.getElementById('result');
+  if(gate==='abroad'||gate==='nossn'){
+    var why = (gate==='nossn')
+      ? 'SSN（ソーシャルセキュリティナンバー）がないと、個人保証をする方のクレジットファイルが存在しないため、この種の資金調達は進められません。ただし就労許可のある方なら取得できます（Form SS-5、無料、およそ2週間）。取得が最初のステップです。'
+      : '個人保証をされる方が米国外にお住まいの場合、ほぼ確実に否認されます。事業が米国法人であっても、ここは別の話です。';
+    out.innerHTML='<div class="lbl">今の時点では</div>'+
+      '<div class="tier">まだ進められません</div>'+
+      '<div class="msg">'+why+'<br><br>ただし、<strong style="color:#fff">配偶者の方が対象になるケースがあります。</strong>ご相談は無料ですので、一度お話を伺ったうえで、進められるかどうかを率直にお伝えします。進められない場合は、できる範囲で適切な先をご案内します。</div>'+
+      CTA+FINE;
+    return;
+  }
+  if(gate===""||fico===""||limitV===""||derog===""){
+    out.innerHTML='<div class="placeholder">4つの質問にお答えいただくと、ここに結果が表示されます。</div>';
+    return;
+  }
+  var limit=+limitV;
+  if(fico==='none'||limit===0){
+    out.innerHTML='<div class="lbl">最初のステップ</div>'+
+      '<div class="tier">クレジット構築</div>'+
+      '<div class="msg">まだご自身名義のファイルが育っていない状態です。消すべき傷がないので、修復ではなく「積み上げ」になります。<strong style="color:#fff">現実的には9〜12ヶ月</strong>で、スコアを出す → ご自身名義のカードを作る → そのカードを半年ほど稼働させる、という順序です。無料相談で、その計画をお作りします。</div>'+
+      CTA+FINE;
+    return;
+  }
+  if(derog==='yes'||fico==='b'){
+    out.innerHTML='<div class="lbl">最初のステップ</div>'+
+      '<div class="tier">クレジット修復</div>'+
+      '<div class="msg">直近に遅延やコレクションがある、またはスコアが640未満の場合、まずファイルを整えるところからです。異議申立てを重ねる作業なので数ヶ月かかります。無料相談で、そこからの道筋をお伝えします。</div>'+
+      CTA+FINE;
+    return;
+  }
+  var mult={e:[4,12],d:[3,9],c:[2,6],a:[1,3.5]}[fico];
+  var low=Math.min(limit*mult[0],150000), high=Math.min(limit*mult[1],150000);
+  if(high < 25000){
+    out.innerHTML='<div class="lbl">一度お話しする価値があります</div>'+
+      '<div class="tier">実際の数字を出しましょう</div>'+
+      '<div class="msg">進められるお立場です。正確な金額は、この診断では見えない部分で決まります。無料相談で、現実的な数字と、そこから伸ばすための最短の道筋をお伝えします。</div>'+
+      CTA+FINE;
+    return;
+  }
+  out.innerHTML='<div class="lbl">見込まれる0％資金調達の目安</div>'+
+    '<div class="amt grad">'+fmt(low)+' &ndash; '+fmt(high)+'</div>'+
+    '<div class="msg"><strong style="color:#fff">これはご回答だけから出した目安で、何も手を入れる前の数字です。</strong>このレンジのどこに着地するかは、ファイルの状態と申込の順番で変わります。無料相談で、現実的な数字を一緒に出しましょう。</div>'+
+    CTA+FINE;
+}
+</script>
+
+<script>
+(function(){
+  var h=document.querySelector('header');
+  var onScroll=function(){ if(h) h.classList.toggle('stuck', window.scrollY>8); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    els.forEach(function(e){io.observe(e);});
+  }
+
+  var bars=document.querySelectorAll('[data-fill]');
+  var fill=function(el){ el.style.width=el.getAttribute('data-fill'); };
+  if(!('IntersectionObserver' in window)){ bars.forEach(fill); }
+  else {
+    var bo=new IntersectionObserver(function(en){
+      en.forEach(function(x){ if(x.isIntersecting){ setTimeout(function(){fill(x.target);}, 140); bo.unobserve(x.target); } });
+    },{threshold:.3});
+    bars.forEach(function(e){bo.observe(e);});
+  }
+})();
+</script>
 </body>
 </html>

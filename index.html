@@ -4,247 +4,199 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Funding Kit — 0% Business Funding, Done For You</title>
-<meta name="description" content="Funding Kit helps US business owners — including Japanese-owned businesses in the US — qualify for up to $150,000 in 0% intro business credit. Japanese-language support available." />
+<meta name="description" content="Funding Kit helps US business owners — including Japanese-owned businesses in the US — qualify for up to $150,000 in 0% intro business credit. No collateral. Japanese-language support available." />
+<meta name="theme-color" content="#0a1120" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://yourfundingkit.com/" />
 <meta property="og:title" content="Funding Kit — Up to $150,000 in 0% Business Funding" />
-<meta property="og:description" content="We help US business owners — including Japanese-owned businesses in the US — qualify for 0% intro business credit. Done for you. 日本語対応." />
+<meta property="og:description" content="Funding Kit helps US business owners — including Japanese-owned businesses in the US — qualify for up to $150,000 in 0% intro business credit. No collateral. Japanese-language support available." />
 <meta property="og:image" content="https://yourfundingkit.com/og.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Funding Kit — Up to $150,000 in 0% Business Funding" />
-<meta name="twitter:description" content="0% intro business credit, done for you. US and Japanese-owned businesses in the US. 日本語対応." />
+<meta name="twitter:description" content="Funding Kit helps US business owners — including Japanese-owned businesses in the US — qualify for up to $150,000 in 0% intro business credit. No collateral. Japanese-language support available." />
 <meta name="twitter:image" content="https://yourfundingkit.com/og.png" />
-<link rel="alternate" hreflang="ja" href="https://yourfundingkit.com/japan" />
 <link rel="alternate" hreflang="en" href="https://yourfundingkit.com/" />
+<link rel="alternate" hreflang="ja" href="https://yourfundingkit.com/japan" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#ffffff; --ink:#141b26; --soft:#5c6675; --line:#e9edf2; --panel:#f7f9fc;
-    --navy:#152238; --navy2:#1e2f4d; --gold:#c19a44; --gold-d:#a37f2f;
-    --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-    --disp:'Sora','Inter',system-ui,sans-serif;
-    --maxw:1080px;
-    --sh:0 12px 34px rgba(20,27,38,.08);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
-  a{text-decoration:none;color:inherit}
-  h1,h2,h3{font-family:var(--disp);font-weight:700;letter-spacing:-.02em;color:var(--navy);line-height:1.18}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:600;border-radius:10px;padding:14px 28px;font-size:15px;cursor:pointer;border:none;transition:transform .18s,background .18s}
-  .btn-gold{background:var(--gold);color:#fff}
-  .btn-gold:hover{transform:translateY(-2px);background:var(--gold-d)}
-  .btn-navy{background:var(--navy);color:#fff}
-  .btn-navy:hover{transform:translatey(-2px);background:#1d2e4d}
-  .btn-line{background:transparent;color:var(--navy);border:1px solid #d5dae2}
-  .btn-line:hover{border-color:var(--navy)}
-
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:92px}
-  .brand{display:flex;align-items:center;gap:13px}
-  .brand-mark{height:50px;width:auto;display:block}
-  .brand-text{height:40px;width:auto;display:block}
-  @media(max-width:820px){.brand-mark{height:40px}.brand-text{height:32px}}
-  .nav-links{display:flex;gap:30px;align-items:center}
-  .nav-links a{color:var(--soft);font-weight:500;font-size:14.5px}
-  .nav-links a:hover{color:var(--ink)}
-  .nav-toggle{display:none;background:none;border:none;color:var(--navy);cursor:pointer;padding:6px;line-height:0}
-  @media(max-width:820px){
-    .nav-toggle{display:inline-flex}
-    .nav-links{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:6px 0;box-shadow:0 14px 28px rgba(20,27,38,.1);display:none}
-    .nav-links.open{display:flex}
-    .nav-links a{padding:13px 24px;font-size:16px;color:var(--ink)}
-    .nav-links a.btn{margin:10px 24px;text-align:center;justify-content:center}
-  }
-
-  .hero{background:var(--navy);color:#fff;padding:96px 0 92px;position:relative;overflow:hidden}
-  .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(620px 320px at 88% 0%,rgba(193,154,68,.16),transparent 62%)}
-  .hero .in{position:relative;max-width:720px}
-  .hero .kick{color:var(--gold);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px}
-  .hero h1{font-size:clamp(34px,5vw,52px);color:#fff;line-height:1.08}
-  .hero h1 span{color:var(--gold)}
-  .hero p{color:#c3ccda;font-size:18.5px;margin:22px 0 32px;max-width:580px}
-  .hero .cta{display:flex;gap:13px;flex-wrap:wrap}
-  .hero .trust{margin-top:34px;color:#aeb8c8;font-size:14px;display:flex;gap:22px;flex-wrap:wrap}
-  .hero .trust span{display:flex;gap:8px;align-items:center}
-  .hero .trust span:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold)}
-
-  section{padding:84px 0}
-  .lead{max-width:640px;margin:0 auto 46px;text-align:center}
-  .lead .k{color:var(--gold-d);font-weight:600;letter-spacing:.14em;font-size:12.5px;text-transform:uppercase}
-  .lead h2{font-size:clamp(26px,3.4vw,36px);margin-top:12px}
-  .lead p{color:var(--soft);margin-top:12px;font-size:17px}
-
-  /* Founder */
-  .founder{display:flex;flex-wrap:wrap;gap:44px;align-items:center;max-width:920px;margin:0 auto}
-  .founder .photo{flex:0 0 180px;text-align:center;margin:0 auto}
-  .founder .av{width:170px;height:170px;border-radius:50%;margin:0 auto 14px;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:var(--disp);font-weight:700;font-size:48px;border:2px solid var(--gold)}
-  .founder .av img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block}
-  .founder .nm{font-family:var(--disp);font-weight:700;color:var(--navy);font-size:19px}
-  .founder .rl{color:var(--gold-d);font-size:13px;font-weight:600}
-  .founder .bio{flex:1;min-width:300px}
-  .founder .bio .k{color:var(--gold-d);font-weight:600;letter-spacing:.14em;font-size:12.5px;text-transform:uppercase}
-  .founder .bio h2{font-size:clamp(24px,3vw,32px);margin:10px 0 16px}
-  .founder .bio p{color:var(--soft);font-size:15.5px;margin-bottom:14px}
-  .founder .quote{color:var(--navy);font-size:16px;font-style:italic;border-left:3px solid var(--gold);padding-left:16px}
-
-  /* Steps */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;max-width:940px;margin:0 auto}
-  @media(max-width:820px){.steps{grid-template-columns:1fr;gap:26px}}
-  .step{text-align:center}
-  .step .b{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold-d);display:grid;place-items:center;font-family:var(--disp);font-weight:700;font-size:18px;margin:0 auto 16px}
-  .step h3{font-size:19px;margin-bottom:8px}
-  .step p{color:var(--soft);font-size:15px}
-  .secure{text-align:center;color:var(--soft);font-size:15.5px;max-width:640px;margin:44px auto 0}
-  .secure b{color:var(--navy);font-weight:600}
-
-  .calc-sec{background:var(--panel)}
-
-  /* Two lanes */
-  .lanes{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:940px;margin:0 auto}
-  @media(max-width:820px){.lanes{grid-template-columns:1fr}}
-  .lane{border:1px solid var(--line);border-radius:16px;padding:30px 28px;background:#fff;box-shadow:var(--sh)}
-  .lane .k{color:var(--gold-d);font-weight:600;letter-spacing:.14em;font-size:12px;text-transform:uppercase}
-  .lane h3{font-size:20px;margin:10px 0 12px}
-  .lane p{color:var(--soft);font-size:15px;margin-bottom:12px}
-  .lane ul{list-style:none;color:var(--soft);font-size:15px;margin-bottom:16px}
-  .lane li{padding-left:18px;position:relative;margin-bottom:6px}
-  .lane li:before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
-  .lane a.more{color:var(--navy);font-weight:600;font-size:14.5px;border-bottom:1.5px solid var(--gold);padding-bottom:1px}
-
-  /* FAQ */
-  .faq{max-width:760px;margin:0 auto}
-  .q{border-bottom:1px solid var(--line);padding:22px 2px}
-  .q h3{font-size:16.5px;margin-bottom:6px}
-  .q p{color:var(--soft);font-size:15px}
-
-  .cta-band{background:var(--navy);border-radius:20px;padding:52px 34px;text-align:center;color:#fff;max-width:900px;margin:0 auto}
-  .cta-band h2{color:#fff;font-size:clamp(25px,3.2vw,34px)}
-  .cta-band p{color:#c3ccda;margin:12px 0 24px;font-size:17px}
-  .cta-band .row{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
-
-  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--soft)}
-  .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:14px;align-items:center}
-  .foot a{color:var(--navy);font-weight:600}
-  .social{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-  .disc{max-width:var(--maxw);margin:20px auto 0;padding:0 24px;color:#93a0b5;font-size:11.5px;line-height:1.55}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 <header id="top"><div class="wrap nav">
-  <a href="index.html" class="brand" aria-label="Funding Kit — home" style="cursor:pointer">
+  <a href="index.html" class="brand" aria-label="Funding Kit" style="cursor:pointer">
     <img src="logo-mark.png" alt="Funding Kit" class="brand-mark"><img src="logo-text.png" alt="Funding Kit — Credit. Capital. Opportunity." class="brand-text">
   </a>
   <nav class="nav-links" onclick="this.classList.remove('open')">
-    <a href="#about">About</a><a href="calculator">Calculator</a><a href="#faq">FAQ</a><a href="japan" lang="ja">日本語</a>
-    <a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a>
-    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold" style="padding:10px 20px">Book a Call</a>
+    <a href="#who">Who we help</a><a href="#about">About</a><a href="calculator">Calculator</a><a href="#faq">FAQ</a><a href="japan" lang="ja">日本語</a><a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a>
+    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold" style="padding:11px 20px">Book a Call</a>
   </nav>
-  <button class="nav-toggle" aria-label="Open menu" onclick="this.closest('.nav').querySelector('.nav-links').classList.toggle('open')"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.closest('.nav').querySelector('.nav-links').classList.toggle('open')"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
 </div></header>
 
-<section class="hero"><div class="wrap in">
-  <div class="kick">0% Business Funding</div>
-  <h1>Get up to <span>$150,000</span> in 0% intro business credit. We handle the structuring and the applications, so you go from first call to funded.</h1>
-  <p>We help entrepreneurs and investors access 0% intro business credit — and if you're looking for more, book a call and we'll figure out the right path together. Japanese-owned businesses in the US welcome; calls available in Japanese.</p>
-  <div class="cta">
-    <a href="calculator" class="btn btn-gold">Check what you qualify for</a>
-    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.3)">Talk to Kengo</a>
+<section class="hero"><div class="wrap grid2">
+  <div>
+    <div class="eyebrow">0% intro business credit</div>
+    <h1>Get up to <span class="grad">$150,000</span> in 0% intro business credit.</h1>
+    <p class="sub">No collateral. We give you a straight read on where your credit actually stands, fix what is in the way, and sequence the applications with you &mdash; from first call to funded. Japanese-owned businesses in the US welcome; calls available in Japanese.</p>
+    <div class="cta">
+      <a href="calculator" class="btn btn-gold">Check what you qualify for <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+      <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-ghost">Talk to Kengo</a>
+    </div>
+    <div class="trust">
+      <span>No credit check to see your options</span><span>No collateral</span><span>Done for you</span><span lang="ja">日本語対応</span>
+    </div>
   </div>
-  <div class="trust">
-    <span>No credit check to see your options</span><span>Done for you</span><span>Funded in as little as 14 days</span><span lang="ja">日本語対応</span>
+  <div class="hcard">
+    <div class="lbl">Funding range</div>
+    <div class="big grad">$10k &ndash; $150k</div>
+    <div class="cap">Where your estimate lands depends on your score, your highest current card limit, and your recent history.</div>
+    <div class="hbar"><i data-fill="74%"></i></div>
+    <div class="hrow"><span>$10,000</span><span>$150,000</span></div>
+    <div class="note">Three questions, no credit check, no obligation.<br><a href="calculator" class="more" style="color:#fff;margin-top:10px">Run the calculator <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></div>
   </div>
+</div></section>
+
+<section class="stats" style="padding:0"><div class="wrap" style="padding:0"><div class="statrow">
+  <div class="stat"><b>0%</b><span>Intro-rate business credit</span></div>
+  <div class="stat"><b>$10k&ndash;$150k</b><span>Range the calculator estimates</span></div>
+  <div class="stat"><b>No</b><span>Collateral required</span></div>
+  <div class="stat"><b>4</b><span>Outcomes: fund, repair, build, refer</span></div>
+</div></div></section>
+
+<section id="who"><div class="wrap">
+  <div class="lead rv"><div class="eyebrow">Who we work with</div><h2>Two kinds of client, one method</h2>
+    <p>The banks underwrite the person who signs, not the business. That is true whether you were born in Ohio or moved here from Tokyo &mdash; so the method is the same, and the starting point is not.</p></div>
+  <div class="cards c2">
+    <div class="card rv">
+      <div class="ico"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <div class="eyebrow">US business owners</div>
+      <h3 style="margin-top:14px">You have credit history &mdash; it just needs work</h3>
+      <p>Most owners who get declined have a file with damage in it, or a file that is fine but structured badly for what they are asking for.</p>
+      <ul class="tick">
+        <li>Collections, charge-offs or late payments to clean up first</li>
+        <li>Utilization, limits and inquiries put in order</li>
+        <li>Applications sequenced across issuers, in the right order</li>
+      </ul>
+      <a class="more" href="calculator">Check what you qualify for <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="card rv">
+      <div class="ico"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg></div>
+      <div class="eyebrow">Japanese-owned businesses in the US</div>
+      <h3 style="margin-top:14px" lang="ja">日系オーナーの方へ。日本語でご相談いただけます</h3>
+      <p>Owners who moved to the US usually have no damage at all. There is nothing to dispute &mdash; the file is simply thin or new. That is a build, not a repair, and it is a different plan.</p>
+      <ul class="tick">
+        <li>Three questions decide it: SSN, living in the US, and how deep your US file is</li>
+        <li>Your visa type &mdash; E-1, E-2, L-1, H-1B, green card &mdash; makes no difference</li>
+        <li>Building a fundable file realistically takes about 12 months, and we will say so</li>
+      </ul>
+      <a class="more" href="japan" lang="ja">日本語のご案内を見る <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</div></section>
+
+<section id="how" class="tint"><div class="wrap">
+  <div class="lead rv"><div class="eyebrow">How it works</div><h2>Simple, and done for you</h2>
+    <p>Three stages. We tell you at the first call which one you are actually starting from.</p></div>
+  <div class="steps rv">
+    <div class="step"><div class="b">1</div><h3>Pre-qualify</h3><p>Run the calculator or book a free call. No credit check, no obligation, and no cost to find out where you stand.</p></div>
+    <div class="step"><div class="b">2</div><h3>Clear what is in the way</h3><p>An honest read on your file &mdash; not the version that sounds good. Then repair the damage, or build the history, depending on which you actually have.</p></div>
+    <div class="step"><div class="b">3</div><h3>Apply in sequence</h3><p>We structure and sequence your applications with you, built for the largest approvals, then you put the capital to work.</p></div>
+  </div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+  <div class="lead rv"><div class="eyebrow">The mechanism</div><h2>Why the number gets big</h2>
+    <p>One application gets you one card. The size comes from sequencing &mdash; several issuers, in the right order, inside a tight window, each one underwriting your personal file and a personal guarantee you sign.</p></div>
+  <div class="stack rv">
+    <div class="srow"><div class="n">Issuer 1</div><div class="t"><i data-fill="62%"></i></div><div class="v">$35,000</div></div>
+    <div class="srow"><div class="n">Issuer 2</div><div class="t"><i data-fill="53%"></i></div><div class="v">$30,000</div></div>
+    <div class="srow"><div class="n">Issuer 3</div><div class="t"><i data-fill="71%"></i></div><div class="v">$40,000</div></div>
+    <div class="srow"><div class="n">Issuer 4</div><div class="t"><i data-fill="44%"></i></div><div class="v">$25,000</div></div>
+    <div class="srow"><div class="n">Issuer 5</div><div class="t"><i data-fill="35%"></i></div><div class="v">$20,000</div></div>
+    <div class="stotal"><span>Illustrative total</span><b class="grad">$150,000</b></div>
+  </div>
+  <p class="caveat rv">Illustration of the mechanism only. The issuers, the amounts, the order, and how many approvals come back differ for every applicant. This is not an estimate, an offer, a pre-approval, or a typical result.</p>
 </div></section>
 
 <section id="about"><div class="wrap">
-  <div class="founder">
-    <div class="photo">
-      <div class="av"><img src="kengo.jpg" alt="Kengo" onerror="this.style.display='none';this.parentNode.textContent='K'"></div>
-      <div class="nm">Kengo Shibazaki</div>
-      <div class="rl">Founder, Funding Kit</div>
+  <div class="founder rv">
+    <div>
+      <div class="fphoto"><div class="av"><img src="kengo.jpg" alt="Kengo Shibazaki" onerror="this.style.display='none';this.parentNode.textContent='K'"></div></div>
+      <div class="fname">Kengo Shibazaki</div>
+      <div class="frole">Founder, Funding Kit</div>
     </div>
-    <div class="bio">
-      <span class="k">Who You'll Work With</span>
+    <div class="fbio">
+      <div class="eyebrow">Who you&rsquo;ll work with</div>
       <h2>Straight answers, no pressure.</h2>
-      <p>Kengo knows what it feels like to have a plan you believe in and no way to fund it. Before Funding Kit, that was him — full of ideas, short on capital, watching good opportunities slip past for no reason other than access to money. He noticed something that bothered him: getting funded had almost nothing to do with how good your idea was, and almost everything to do with whether you understood the system. Most people never get taught that system. So they get told "no," assume the door is closed, and give up.</p>
-      <p>Kengo built Funding Kit to be the person he wished he'd had back then.</p>
-      <p>His years at Apple reshaped how he works with people. The best in that room weren't pushing anything — they were listening. Figuring out what someone actually needed, then pointing them to it, even when the answer was "not yet" or "not this." He carries that into every client conversation at Funding Kit.</p>
-      <p>So here's what working with Kengo actually looks like: he listens first. He gives you an honest read on where your credit and profile really stand — not the version that sounds good, the real one. Then he lays out a clear, step-by-step path to get you funded, whether that means strengthening your credit first or moving straight to financing. No pressure. No jargon. No selling you something you don't need.</p>
-      <p>Just someone who's been on the other side of that wall — and knows the way through.</p>
+      <p>Kengo knows what it feels like to have a plan you believe in and no way to fund it. Before Funding Kit, that was him &mdash; full of ideas, short on capital, watching good opportunities slip past for no reason other than access to money. He noticed something that bothered him: getting funded had almost nothing to do with how good your idea was, and almost everything to do with whether you understood the system. Most people never get taught that system. So they get told &ldquo;no,&rdquo; assume the door is closed, and give up.</p>
+      <p>Kengo built Funding Kit to be the person he wished he&rsquo;d had back then.</p>
+      <p>His years at Apple reshaped how he works with people. The best in that room weren&rsquo;t pushing anything &mdash; they were listening. Figuring out what someone actually needed, then pointing them to it, even when the answer was &ldquo;not yet&rdquo; or &ldquo;not this.&rdquo; He carries that into every client conversation at Funding Kit.</p>
+      <p>So here&rsquo;s what working with Kengo actually looks like: he listens first. He gives you an honest read on where your credit and profile really stand &mdash; not the version that sounds good, the real one. Then he lays out a clear, step-by-step path toward qualifying for the funding you are after &mdash; whether that means strengthening your credit first or moving straight to financing. No pressure. No jargon. No selling you something you don&rsquo;t need.</p>
+      <div class="pullq">&ldquo;Just someone who&rsquo;s been on the other side of that wall &mdash; and knows the way through.&rdquo;</div>
     </div>
   </div>
 </div></section>
 
-<section id="who"><div class="wrap">
-  <div class="lead"><span class="k">Who We Work With</span><h2>Two kinds of client, one method</h2>
-    <p>The banks underwrite the person who signs, not the business. That is true whether you were born in Ohio or moved here from Tokyo &mdash; so the path is the same, and the starting point is not.</p></div>
-  <div class="lanes">
-    <div class="lane">
-      <span class="k">US business owners</span>
-      <h3>You have credit history &mdash; it just needs work</h3>
-      <p>Most owners who get declined have a file with damage in it, or a file that is fine but structured badly for what they are asking for.</p>
-      <ul>
-        <li>Collections, charge-offs or late payments to clean up first</li>
-        <li>Utilization, limits and inquiries to put in order</li>
-        <li>Applications sequenced across the right lenders, in the right order</li>
-      </ul>
-      <a class="more" href="calculator">Check what you qualify for &rarr;</a>
-    </div>
-    <div class="lane">
-      <span class="k">Japanese-owned businesses in the US</span>
-      <h3 lang="ja">日系オーナーの方へ &mdash; 日本語でご相談いただけます</h3>
-      <p>Owners who moved to the US usually have no damage at all. There is nothing to dispute &mdash; the file is simply thin or new. That is a build, not a repair, and it is a different plan.</p>
-      <ul>
-        <li>Three questions decide it: SSN, living in the US, and how deep your US credit file is</li>
-        <li>Your visa type &mdash; E-1, E-2, L-1, H-1B, green card &mdash; makes no difference to funding</li>
-        <li>Building a fundable file realistically takes about 12 months, and we will say so honestly</li>
-      </ul>
-      <a class="more" href="japan" lang="ja">日本語のご案内を見る &rarr;</a>
-    </div>
+<section id="faq" class="tint"><div class="wrap">
+  <div class="lead rv"><div class="eyebrow">FAQ</div><h2>Common questions</h2></div>
+  <div class="faq rv">
+    <details class="q"><summary>How much can I access?</summary><div class="a">Typically $10,000 to $150,000, depending on your credit and business setup. The calculator gives a realistic range based on what you tell it &mdash; nothing is confirmed until a lender actually approves it.</div></details>
+    <details class="q"><summary>How long does it take?</summary><div class="a">There are two clocks, and it is worth separating them. Once your file is ready, the application round itself usually runs a couple of weeks. Getting the file ready is the part that varies: if your credit is already clean, that step is nothing; a repair runs a few months of dispute rounds; building a US credit file from scratch realistically takes about a year. We will tell you which one you are on at the first call, before you spend anything.</div></details>
+    <details class="q"><summary>Do I need collateral or perfect credit?</summary><div class="a">No collateral is required. Stronger credit helps, but structure and sequencing matter just as much, and we will tell you honestly where you stand.</div></details>
+    <details class="q"><summary>Can you guarantee I&rsquo;ll get funded, or that my score will go up?</summary><div class="a">No &mdash; and legally, nobody can. Under the Credit Repair Organizations Act it is against the law for a company like ours to promise a specific score increase or that a particular item will come off your report. So if someone is promising you that, they are telling you something they are not allowed to say. What we will do is give you a straight read on where you stand before you spend anything, and tell you plainly when we are not the right fit.</div></details>
+    <details class="q"><summary>I moved to the US and have no credit history here. Can you help?</summary><div class="a">Usually yes, but as a build rather than a repair. What matters is whether you have a Social Security number, whether you live in the US, and how deep your US credit file is &mdash; your visa type is not a factor. Building a file lenders will actually fund on takes about 12 months, and we would rather tell you that up front than sell you a shortcut. <a href="japan" lang="ja">日本語のご案内はこちら</a></div></details>
+    <details class="q"><summary>Are calls available in Japanese?</summary><div class="a" lang="ja">はい。ご相談・資料・やりとりは日本語で対応いたします。<a href="japan">日本語のご案内</a></div></details>
   </div>
 </div></section>
 
-<section id="how" class="calc-sec"><div class="wrap">
-  <div class="lead"><span class="k">How It Works</span><h2>Simple, and done for you</h2></div>
-  <div class="steps">
-    <div class="step"><div class="b">1</div><h3>Pre-qualify</h3><p>Run the calculator or book a free call. No credit check, no obligation.</p></div>
-    <div class="step"><div class="b">2</div><h3>Get funded</h3><p>We structure and sequence your applications with you, built for the largest, fastest approvals.</p></div>
-    <div class="step"><div class="b">3</div><h3>Scale</h3><p>Put your capital to work, and keep access open for future rounds.</p></div>
-  </div>
-  <p class="secure">We start you with <b>0% intro business credit</b> — and if you want to go bigger, we'll map out the path to more funding together. Book a call and we'll figure it out.</p>
-</div></section>
-
-<section id="faq"><div class="wrap">
-  <div class="lead"><span class="k">FAQ</span><h2>Common questions</h2></div>
-  <div class="faq">
-    <div class="q"><h3>How much can I access?</h3><p>Typically $10,000 to $150,000, depending on your credit and business setup. The calculator gives your realistic range.</p></div>
-    <div class="q"><h3>How long does it take?</h3><p>Most clients are funded within a few weeks. Some go as fast as 14 days, depending on their profile.</p></div>
-    <div class="q"><h3>Do I need collateral or perfect credit?</h3><p>No collateral is required. Stronger credit helps, but structure and sequencing matter just as much, and we'll tell you honestly where you stand.</p></div>
-    <div class="q"><h3>I moved to the US and have no credit history here. Can you help?</h3><p>Usually yes, but as a build rather than a repair. What matters is whether you have a Social Security number, whether you live in the US, and how deep your US credit file is &mdash; your visa type is not a factor. Building a file that lenders will actually fund on takes about 12 months, and we would rather tell you that up front than sell you a shortcut. <a href="japan" lang="ja" style="color:var(--navy);font-weight:600">日本語のご案内はこちら</a>.</p></div>
-    <div class="q"><h3>Are calls available in Japanese?</h3><p lang="ja">はい。ご相談・資料・やりとりは日本語で対応いたします。<a href="japan" style="color:var(--navy);font-weight:600">日本語のご案内</a></p></div>
-  </div>
-</div></section>
-
-<section id="apply" class="calc-sec"><div class="wrap"><div class="cta-band">
+<section id="apply"><div class="wrap"><div class="cta-band rv">
   <h2>Ready to see your number?</h2>
-  <p>Check what you qualify for in 60 seconds, or book a free call with Kengo.</p>
+  <p>Check what you qualify for in 60 seconds, or book a free 30-minute call with Kengo.</p>
   <div class="row">
-    <a href="calculator" class="btn btn-gold">Check what you qualify for</a>
-    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.3)">Book a Call with Kengo</a>
+    <a href="calculator" class="btn btn-gold">Check what you qualify for <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-ghost">Book a Call</a>
   </div>
 </div></div></section>
-
 <footer><div class="wrap foot">
   <div><strong style="color:var(--navy)">Funding Kit</strong></div>
   <div class="social"><a href="https://www.instagram.com/kengo_shibz" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/kengo_shibz" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/1191212280751117" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/kengoshibazaki" target="_blank" rel="noopener">LinkedIn</a></div>
   <div>Mon-Fri, 9am-6pm &nbsp;·&nbsp; kengo@yourfundingkit.com &nbsp;·&nbsp; <a href="japan" lang="ja">日本語</a> &nbsp;·&nbsp; <a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a></div>
 </div>
-<div class="disc">Funding Kit is a funding consulting service, not a lender or bank. The calculator provides a rough estimate for informational purposes only — it is not an offer, pre-approval, or guarantee of funding. Amounts, rates, and timelines vary by applicant and lender. "0% interest" refers to introductory-rate business credit products offered by third-party financial institutions, subject to their approval and terms. Nothing here is financial or legal advice.</div>
+<div class="disc">Funding Kit is a funding consulting service, not a lender or bank. The calculator provides a rough estimate for informational purposes only — it is not an offer, pre-approval, or guarantee of funding. Amounts, rates, and timelines vary by applicant and lender, and no outcome is guaranteed. “0% interest” refers to introductory-rate business credit products offered by third-party financial institutions, subject to their approval and terms. Funding Kit is not affiliated with, endorsed by, or acting on behalf of any bank or card issuer. As a credit services organization we cannot and do not guarantee an increase in your credit score or the removal of any item from your credit report. Nothing here is financial, legal, tax, or immigration advice.</div>
 </footer>
+<div class="scta">
+  <a href="calculator" class="btn btn-gold">Calculator</a>
+  <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-ghost">Book a Call</a>
+</div>
+
+<script>
+(function(){
+  var h=document.querySelector('header');
+  var onScroll=function(){ if(h) h.classList.toggle('stuck', window.scrollY>8); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    els.forEach(function(e){io.observe(e);});
+  }
+
+  var bars=document.querySelectorAll('[data-fill]');
+  var fill=function(el){ el.style.width=el.getAttribute('data-fill'); };
+  if(!('IntersectionObserver' in window)){ bars.forEach(fill); }
+  else {
+    var bo=new IntersectionObserver(function(en){
+      en.forEach(function(x){ if(x.isIntersecting){ setTimeout(function(){fill(x.target);}, 140); bo.unobserve(x.target); } });
+    },{threshold:.3});
+    bars.forEach(function(e){bo.observe(e);});
+  }
+})();
+</script>
 </body>
 </html>

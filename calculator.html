@@ -4,160 +4,95 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Funding Calculator — Funding Kit</title>
-<meta name="description" content="See what 0% business funding you may qualify for — three quick questions, an instant estimate. No credit check." />
+<meta name="description" content="See what 0% intro business credit you may qualify for — three quick questions, an instant estimate. No credit check." />
+<meta name="theme-color" content="#0a1120" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://yourfundingkit.com/calculator" />
 <meta property="og:title" content="Funding Calculator — See What You Qualify For" />
-<meta property="og:description" content="Three quick questions, an instant estimate of the 0% business funding you may qualify for. No credit check." />
+<meta property="og:description" content="See what 0% intro business credit you may qualify for — three quick questions, an instant estimate. No credit check." />
 <meta property="og:image" content="https://yourfundingkit.com/og-calculator.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Funding Calculator — See What You Qualify For" />
-<meta name="twitter:description" content="Three quick questions, an instant estimate. No credit check." />
+<meta name="twitter:description" content="See what 0% intro business credit you may qualify for — three quick questions, an instant estimate. No credit check." />
 <meta name="twitter:image" content="https://yourfundingkit.com/og-calculator.png" />
+<link rel="alternate" hreflang="en" href="https://yourfundingkit.com/" />
+<link rel="alternate" hreflang="ja" href="https://yourfundingkit.com/japan" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#ffffff; --ink:#141b26; --soft:#5c6675; --line:#e9edf2; --panel:#f7f9fc;
-    --navy:#152238; --navy2:#1e2f4d; --gold:#c19a44; --gold-d:#a37f2f;
-    --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-    --disp:'Sora','Inter',system-ui,sans-serif;
-    --maxw:1080px;
-    --sh:0 12px 34px rgba(20,27,38,.08);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
-  a{text-decoration:none;color:inherit}
-  h1,h2,h3{font-family:var(--disp);font-weight:700;letter-spacing:-.02em;color:var(--navy);line-height:1.18}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:600;border-radius:10px;padding:14px 28px;font-size:15px;cursor:pointer;border:none;transition:transform .18s,background .18s}
-  .btn-gold{background:var(--gold);color:#fff}
-  .btn-gold:hover{transform:translateY(-2px);background:var(--gold-d)}
-  .btn-navy{background:var(--navy);color:#fff}
-  .btn-navy:hover{transform:translatey(-2px);background:#1d2e4d}
-  .btn-line{background:transparent;color:var(--navy);border:1px solid #d5dae2}
-  .btn-line:hover{border-color:var(--navy)}
-
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:92px}
-  .brand{display:flex;align-items:center;gap:13px}
-  .brand-mark{height:50px;width:auto;display:block}
-  .brand-text{height:40px;width:auto;display:block}
-  @media(max-width:820px){.brand-mark{height:40px}.brand-text{height:32px}}
-  .nav-links{display:flex;gap:30px;align-items:center}
-  .nav-links a{color:var(--soft);font-weight:500;font-size:14.5px}
-  .nav-links a:hover{color:var(--ink)}
-  .nav-toggle{display:none;background:none;border:none;color:var(--navy);cursor:pointer;padding:6px;line-height:0}
-  @media(max-width:820px){
-    .nav-toggle{display:inline-flex}
-    .nav-links{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:6px 0;box-shadow:0 14px 28px rgba(20,27,38,.1);display:none}
-    .nav-links.open{display:flex}
-    .nav-links a{padding:13px 24px;font-size:16px;color:var(--ink)}
-    .nav-links a.btn{margin:10px 24px;text-align:center;justify-content:center}
-  }
-
-  .top{background:var(--navy);color:#fff;padding:56px 0 40px;text-align:center;position:relative;overflow:hidden}
-  .top:before{content:"";position:absolute;inset:0;background:radial-gradient(620px 300px at 80% 0%,rgba(193,154,68,.16),transparent 62%)}
-  .top .in{position:relative;max-width:640px;margin:0 auto}
-  .top .kick{color:var(--gold);font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
-  .top h1{color:#fff;font-size:clamp(28px,4.4vw,42px)}
-  .top p{color:#c3ccda;font-size:17px;margin-top:14px}
-
-  .calc-wrap{padding:44px 0 84px}
-  .calc{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch;max-width:960px;margin:0 auto}
-  @media(max-width:820px){.calc{grid-template-columns:1fr}}
-  .calc-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--sh)}
-  .fld{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
-  .fld:last-of-type{margin-bottom:0}
-  .fld label{font-size:12.5px;font-weight:600;color:var(--soft)}
-  .fld select{padding:13px 13px;border:1px solid #dfe4ec;border-radius:10px;font-size:15px;font-family:inherit;color:var(--ink);background:#fff}
-  .fld select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(193,154,68,.14)}
-  .result{background:var(--navy);border-radius:18px;padding:32px;display:flex;flex-direction:column;justify-content:center;color:#fff;min-height:300px}
-  .result .lbl{color:#b9c3d4;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
-  .result .amt{font-family:var(--disp);font-size:clamp(30px,5vw,42px);font-weight:700;color:var(--gold);margin:9px 0}
-  .result .tier{font-family:var(--disp);font-weight:700;font-size:18px;color:var(--gold);margin-bottom:8px}
-  .result .msg{color:#c6cfdd;font-size:14.5px}
-  .result .placeholder{color:#93a0b5;font-size:15px;text-align:center;margin:auto;max-width:270px}
-  .result .btn{margin-top:20px}
-  .result .fine{color:#8492a8;font-size:11.5px;margin-top:14px}
-
-  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--soft)}
-  .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:14px;align-items:center}
-  .foot a{color:var(--navy);font-weight:600}
-  .social{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-  .disc{max-width:var(--maxw);margin:20px auto 0;padding:0 24px;color:#93a0b5;font-size:11.5px;line-height:1.55}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<header><div class="wrap nav">
-  <a href="index.html" class="brand" aria-label="Funding Kit — home" style="cursor:pointer">
+<header id="top"><div class="wrap nav">
+  <a href="index.html" class="brand" aria-label="Funding Kit" style="cursor:pointer">
     <img src="logo-mark.png" alt="Funding Kit" class="brand-mark"><img src="logo-text.png" alt="Funding Kit — Credit. Capital. Opportunity." class="brand-text">
   </a>
   <nav class="nav-links" onclick="this.classList.remove('open')">
-    <a href="index.html">Home</a><a href="index.html#about">About</a><a href="index.html#faq">FAQ</a><a href="japan" lang="ja">日本語</a>
-    <a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a>
-    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold" style="padding:10px 20px">Book a Call</a>
+    <a href="index.html">Home</a><a href="index.html#who">Who we help</a><a href="index.html#about">About</a><a href="index.html#faq">FAQ</a><a href="japan" lang="ja">日本語</a><a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a>
+    <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold" style="padding:11px 20px">Book a Call</a>
   </nav>
-  <button class="nav-toggle" aria-label="Open menu" onclick="this.closest('.nav').querySelector('.nav-links').classList.toggle('open')"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.closest('.nav').querySelector('.nav-links').classList.toggle('open')"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
 </div></header>
 
-<section class="top"><div class="wrap in">
-  <div class="kick">Free Funding Calculator</div>
-  <h1>See what you qualify for</h1>
-  <p>Three quick questions, an instant estimate. No credit check, no obligation.</p>
+<section class="hero" style="padding:78px 0 70px"><div class="wrap" style="max-width:740px;text-align:center">
+  <div class="eyebrow">Free funding calculator</div>
+  <h1 style="font-size:clamp(31px,4.4vw,48px)">See what you <span class="grad">qualify for</span></h1>
+  <p class="sub" style="margin:20px auto 0">Three quick questions, an instant estimate. No credit check, no obligation, and nothing to pay to find out.</p>
 </div></section>
 
-<section class="calc-wrap"><div class="wrap">
+<section style="padding:64px 0"><div class="wrap">
   <div class="calc">
-    <div class="calc-card">
-      <div class="fld"><label>What's your credit score?</label>
+    <div class="calc-card rv">
+      <div class="fld"><label>What&rsquo;s your credit score?</label>
         <select id="fico" onchange="calc()">
-          <option value="">Select…</option>
+          <option value="">Select&hellip;</option>
           <option value="e">760+</option>
-          <option value="d">720 – 759</option>
-          <option value="c">680 – 719</option>
-          <option value="a">640 – 679</option>
+          <option value="d">720 &ndash; 759</option>
+          <option value="c">680 &ndash; 719</option>
+          <option value="a">640 &ndash; 679</option>
           <option value="b">Below 640</option>
         </select></div>
       <div class="fld"><label>Your highest current credit card limit?</label>
         <select id="limit" onchange="calc()">
-          <option value="">Select…</option>
+          <option value="">Select&hellip;</option>
           <option value="20000">$15,000+</option>
-          <option value="12500">$10,000 – $15,000</option>
-          <option value="7500">$5,000 – $10,000</option>
-          <option value="3500">$2,000 – $5,000</option>
+          <option value="12500">$10,000 &ndash; $15,000</option>
+          <option value="7500">$5,000 &ndash; $10,000</option>
+          <option value="3500">$2,000 &ndash; $5,000</option>
           <option value="1500">Under $2,000</option>
-          <option value="0">I don't have a credit card</option>
+          <option value="0">I don&rsquo;t have a credit card</option>
         </select></div>
       <div class="fld"><label>Any late payments, collections, or bankruptcy in the last 2 years?</label>
         <select id="derog" onchange="calc()">
-          <option value="">Select…</option>
+          <option value="">Select&hellip;</option>
           <option value="no">No</option>
           <option value="yes">Yes</option>
         </select></div>
     </div>
-    <div class="result" id="result">
+    <div class="result rv" id="result">
       <div class="placeholder">Answer the three questions and your estimated 0% funding range will appear right here.</div>
     </div>
   </div>
+  <p class="caveat" style="color:var(--soft);max-width:860px">This is a self-reported estimate, not a credit check and not an application. Nothing here is an offer, a pre-approval, or a promise of funding &mdash; only a lender can approve you, on their own terms.</p>
 </div></section>
-
 <footer><div class="wrap foot">
   <div><strong style="color:var(--navy)">Funding Kit</strong></div>
   <div class="social"><a href="https://www.instagram.com/kengo_shibz" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/kengo_shibz" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/1191212280751117" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/kengoshibazaki" target="_blank" rel="noopener">LinkedIn</a></div>
   <div>Mon-Fri, 9am-6pm &nbsp;·&nbsp; kengo@yourfundingkit.com &nbsp;·&nbsp; <a href="japan" lang="ja">日本語</a> &nbsp;·&nbsp; <a href="https://yourfundingkit.scorexer.com" target="_blank" rel="noopener">Client Login</a></div>
 </div>
-<div class="disc">Funding Kit is a funding consulting service, not a lender or bank. The calculator provides a rough estimate for informational purposes only — it is not an offer, pre-approval, or guarantee of funding. Amounts, rates, and timelines vary by applicant and lender. "0% interest" refers to introductory-rate business credit products offered by third-party financial institutions, subject to their approval and terms. Nothing here is financial or legal advice.</div>
+<div class="disc">Funding Kit is a funding consulting service, not a lender or bank. The calculator provides a rough estimate for informational purposes only — it is not an offer, pre-approval, or guarantee of funding. Amounts, rates, and timelines vary by applicant and lender, and no outcome is guaranteed. “0% interest” refers to introductory-rate business credit products offered by third-party financial institutions, subject to their approval and terms. Funding Kit is not affiliated with, endorsed by, or acting on behalf of any bank or card issuer. As a credit services organization we cannot and do not guarantee an increase in your credit score or the removal of any item from your credit report. Nothing here is financial, legal, tax, or immigration advice.</div>
 </footer>
+<div class="scta">
+  <a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold">Book a Call</a>
+  <a href="index.html" target="_blank" rel="noopener" class="btn btn-ghost">Home</a>
+</div>
 
 <script>
 function fmt(n){return "$" + (Math.round(n/1000)*1000).toLocaleString();}
 var CTA='<a href="https://calendly.com/kengo-yourfundingkit/30min" target="_blank" rel="noopener" class="btn btn-gold">Book a Call</a>';
-var FINE='<div class="fine">Estimate only, not an offer or approval. Confirmed on your free call.</div>';
+var FINE='<div class="fine">Estimate only \u2014 not an offer, pre-approval, or guarantee. Confirmed on your free call.</div>';
 function calc(){
   var fico=document.getElementById('fico').value,
       limitV=document.getElementById('limit').value,
@@ -168,36 +103,61 @@ function calc(){
     return;
   }
   var limit=+limitV;
-  // Routing: recent negatives or low score -> cleanup; no card -> building
   if(derog==='yes'||fico==='b'){
     out.innerHTML='<div class="lbl">First step</div>'+
       '<div class="tier">Credit cleanup</div>'+
-      '<div class="msg">With recent negatives or a score under 640, a quick credit cleanup comes first — and that\'s exactly what we help with. Book a call and we\'ll map your path to funding.</div>'+
+      '<div class="msg">With recent negatives or a score under 640, cleaning up the file comes first \u2014 and that is exactly what we help with. It is dispute rounds, not a switch, so it takes a few months. Book a call and we will map the path.</div>'+
       CTA+FINE;
     return;
   }
   if(limit===0){
     out.innerHTML='<div class="lbl">First step</div>'+
       '<div class="tier">Credit building</div>'+
-      '<div class="msg">Without an existing card, you\'d start with a short credit-building step to unlock the best approvals. Book a call and we\'ll build your plan.</div>'+
+      '<div class="msg">Without an existing card there is no file for a lender to underwrite yet, so you would start by building one. Realistically that is a matter of months, not weeks. Book a call and we will lay out the plan.</div>'+
       CTA+FINE;
     return;
   }
   var mult={e:[4,12],d:[3,9],c:[2,6],a:[1,3.5]}[fico];
   var low=Math.min(limit*mult[0],150000), high=Math.min(limit*mult[1],150000);
-  // Low estimate -> don't show a discouraging small number; route to a call
   if(high < 25000){
-    out.innerHTML='<div class="lbl">You\'re a fit &mdash; let\'s talk</div>'+
-      '<div class="tier">Let\'s find your number</div>'+
-      '<div class="msg">Your profile qualifies for funding &mdash; and the exact amount depends on a few details we optimize together. A quick call gets you your real number, plus the fastest path to grow it.</div>'+
+    out.innerHTML='<div class="lbl">Worth a conversation</div>'+
+      '<div class="tier">Let&rsquo;s find your number</div>'+
+      '<div class="msg">Your profile is workable \u2014 the exact amount depends on details this calculator cannot see. A quick call gets you a realistic number and the fastest honest path to grow it.</div>'+
       CTA+FINE;
     return;
   }
   out.innerHTML='<div class="lbl">Estimated 0% funding you may qualify for</div>'+
-    '<div class="amt">'+fmt(low)+' &ndash; '+fmt(high)+'</div>'+
-    '<div class="msg"><strong style="color:#fff">This is a ballpark based on your profile alone — before working with us.</strong> Optimizing your credit and sequencing your applications the right way is how clients push toward the top of this range and beyond. Book a call and we\'ll find your real number.</div>'+
+    '<div class="amt grad">'+fmt(low)+' &ndash; '+fmt(high)+'</div>'+
+    '<div class="msg"><strong style="color:#fff">This is a ballpark from your answers alone, before any work is done.</strong> Where you land inside it depends on your file and the order the applications go in. Book a call and we will work out a realistic number together.</div>'+
     CTA+FINE;
 }
+</script>
+
+<script>
+(function(){
+  var h=document.querySelector('header');
+  var onScroll=function(){ if(h) h.classList.toggle('stuck', window.scrollY>8); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    els.forEach(function(e){io.observe(e);});
+  }
+
+  var bars=document.querySelectorAll('[data-fill]');
+  var fill=function(el){ el.style.width=el.getAttribute('data-fill'); };
+  if(!('IntersectionObserver' in window)){ bars.forEach(fill); }
+  else {
+    var bo=new IntersectionObserver(function(en){
+      en.forEach(function(x){ if(x.isIntersecting){ setTimeout(function(){fill(x.target);}, 140); bo.unobserve(x.target); } });
+    },{threshold:.3});
+    bars.forEach(function(e){bo.observe(e);});
+  }
+})();
 </script>
 </body>
 </html>
