@@ -29,7 +29,7 @@ Do this once per computer, then it "just works" every time:
 ## Brand
 - Navy `#152238` (deep) / `#1e2f4d` (lighter), Gold `#c19a44`, ink `#141b26`.
 - Fonts: **Sora** (headings), **Inter** (body), loaded from Google Fonts in each page `<head>`.
-- Contact email shown in the footer: **kengo@yourfundingkit.com** (both pages).
+- Contact email shown in the footer: **contact@yourfundingkit.com** (both pages).
 
 ## Common edits — how to
 - **Change text / links / email:** edit the relevant `.html` file, then have the owner commit &
